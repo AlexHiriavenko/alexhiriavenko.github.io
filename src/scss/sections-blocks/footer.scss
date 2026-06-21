@@ -1,0 +1,43 @@
+@use "../mixins" as *;
+
+footer {
+    display: flex;
+    justify-content: center;
+    @include setSection;
+    background-image: linear-gradient(to bottom, #33383f, #111827);
+    background-repeat: no-repeat;
+    background-attachment: fixed, fixed, fixed, fixed;// красивый параллакс-эффект
+    background-size: auto, auto, auto, auto;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
+
+    small {
+        font-size: 18px;
+    }
+
+    .github-text {
+        font-size: 16px;
+    }
+}
+
+.footer__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.github-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+
+footer time {
+    font-size: 18px;
+}

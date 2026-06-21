@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <title>Certificates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Frontend Developer CV: projects (React, Redux, Node.js), experience, skills, education, certificates, contacts."
+  />
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alex (Oleksiy) Giryavenko",
+      "jobTitle": "Frontend Developer",
+      "image": "https://example.com/img/user-photo.jpg",
+      "email": "mailto:martmarchmartmarch@gmail.com",
+      "telephone": "+380504716006",
+      "url": "https://ma_rch.gitlab.io/cv_fullstack_alex_giryavenko/",
+      "sameAs": [
+        "https://www.linkedin.com/in/oleksii-hiriavenko/",
+        "https://github.com/AlexHiriavenko",
+        "https://t.me/AlexHiriavenko"
+      ],
+      "knowsLanguage": ["uk", "en", "ru"]
+    }
+  </script>
+  <!-- Favicon базовые -->
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/cv32.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="./img/favicon/cv64.png" />
+<link rel="icon" type="image/png" sizes="128x128" href="./img/favicon/cv128.png" />
+<link rel="icon" type="image/png" sizes="256x256" href="./img/favicon/cv256.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="./img/favicon/cv512.png" />
+
+<!-- Apple (iOS / iPadOS) -->
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/cv180.png" />
+
+<!-- PWA manifest -->
+<link rel="manifest" href="../manifest.webmanifest" />
+
+<!-- Цвет адресной строки (Android/Chrome, Windows tiles) -->
+<meta name="theme-color" content="#0f172a" />
+<meta name="msapplication-TileColor" content="#0f172a" />
+
+  <link href="../css/styles.min.css?_v=20251005172421" rel="stylesheet" />
+</head>
+
+  <body>
+    <header>
+  <div class="header__avatar">
+    <img src="../img/user-photo.jpg" alt="person photo" width="54" height="54" class="avatar__img" />
+  </div>
+  <nav>
+    <ul class="nav-list">
+      <li>
+        <a class="nav-link" href="../#summary">Summary</a>
+      </li>
+      <li>
+        <a class="nav-link" href="../#exp">Experience</a>
+      </li>
+      <li>
+        <a class="nav-link" href="../#skills">Skills</a>
+      </li>
+      <li>
+        <a class="nav-link" href="../#edu">Education</a>
+      </li>
+      <li>
+        <a class="nav-link cert" href="../certificates/">Certificates</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="burger-btn">Menu</button>
+</header>
+
+    <div class="container"><section class="cert-gallery">
+  <!-- элемент для задания ширины колонки (responsive) -->
+  <div class="grid-sizer"></div>
+
+  <div class="cert-item"><img src="../img/cert/eng.jpg" alt="English Certificate" /></div>
+  <div class="cert-item">
+    <img src="../img/cert/it-porducts.jpg" alt="IT Products Certificate" />
+  </div>
+  <div class="cert-item"><img src="../img/cert/DanIT.jpg" alt="Dan.IT Certificate" /></div>
+  <div class="cert-item"><img src="../img/cert/epam.jpg" alt="EPAM Certificate" /></div>
+  <div class="cert-item">
+    <img src="../img/cert/rss-nodejs.jpg" alt="RSS Node.js Certificate" />
+  </div>
+  <div class="cert-item"><img src="../img/cert/sql_certificate.png" alt="SQL Certificate" /></div>
+  <div class="cert-item"><img src="../img/cert/rss-js.jpg" alt="RSS JavaScript Certificate" /></div>
+</section>
+</div>
+    <footer>
+  <ul class="footer__list" aria-label="Footer links and copyright">
+    <li>
+      <a
+        class="github-item"
+        href="https://github.com/AlexHiriavenko"
+        target="_blank"
+        rel="me noopener"
+        aria-label="GitHub — Alex Hiriavenko"
+      >
+        <img src="./img/icons/github.svg" alt="" width="26" />
+        <span class="github-text">GitHub</span>
+      </a>
+    </li>
+
+    <li>
+      <small>© <time id="copyright-year" datetime="2025">2025</time></small>
+    </li>
+  </ul>
+</footer>
+
+<script>
+  (() => {
+    const el = document.getElementById("copyright-year");
+    if (!el) return;
+    const y = String(new Date().getFullYear());
+    el.textContent = y;
+    el.setAttribute("datetime", y);
+  })();
+</script>
+
+
+    <!-- Lightbox -->
+    <div class="lb" id="lightbox" role="dialog" aria-modal="true" hidden>
+      <div class="lb__backdrop" data-lb-close></div>
+
+      <figure class="lb__content" aria-label="Certificate preview">
+        <button class="lb__close" type="button" aria-label="Close" data-lb-close>✕</button>
+        <img class="lb__img" alt="" />
+      </figure>
+    </div>
+
+    <!-- Lightbox -->
+    <script src="../js/app.min.js?_v=20251005172421"></script>
+    <!-- Masonry -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js?_v=20251005172421"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js?_v=20251005172421"></script>
+  </body>
+</html>

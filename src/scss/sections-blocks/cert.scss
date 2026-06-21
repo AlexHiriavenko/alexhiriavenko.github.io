@@ -1,0 +1,46 @@
+/* галерея больше НЕ сжимается как flex-item */
+.cert-gallery {
+  position: relative;
+  margin: 0 auto;
+  padding: 16px;
+
+  /* ключевое: запретить shrink в родительском flex-контейнере */
+  flex: 0 0 auto;   /* или flex: none; */
+}
+
+.grid-sizer { width: 300px; }
+.cert-item  { 
+  width: 300px; 
+  margin-bottom: 16px; 
+  cursor: zoom-in;
+}
+
+@media (max-width: 900px) {
+  .grid-sizer, .cert-item { width: 220px; }
+}
+@media (max-width: 600px) {
+  .grid-sizer, .cert-item { width: 100%; }
+}
+
+.cert-item img {
+  display:block; width:100%; height:auto;
+  border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,.1);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.cert-item img:hover { transform:scale(1.03); box-shadow:0 4px 16px rgba(0,0,0,.2); }
+
+@media (max-width: 600px) {
+  .cert-gallery {
+    display: flex;
+    flex: unset;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-sizer { display: none; }
+  .cert-item {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 16px;
+    position: static !important;
+  }
+}

@@ -1,0 +1,126 @@
+.cv-title {
+    text-align: center;
+    font-size: 42px;
+}
+
+.cv-subtitle {
+    margin-top: 10px;
+    font-size: 32px;
+    text-align: center;
+}
+
+main section {
+    margin-top: 20px;
+}
+
+main .section-title {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid white;
+    color: rgb(150, 200, 90);
+}
+
+#exp, #summary, #education {
+    scroll-margin-top: 66px;
+  }
+
+.about-text {
+    font-size: 13px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.projects__item {
+    margin-bottom: 24px;
+}
+
+.projects__note {
+    margin-bottom: 12px;
+}
+
+.projects__item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.projects__item-description {
+    display: flex;
+    gap: 2%;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.projects__item-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+    gap: 5px;
+}
+
+.projects__item-description-text {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.projects__item-link {
+    color: lightgray;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black, 0 0 0.1em white, 0 0 0.1em white;
+    transition-duration: .5s;
+}
+
+.projects__item-link:hover {
+    color: lightgreen;
+}
+
+.projects__item-link--hover:hover {
+    filter: brightness(.7);
+}
+
+.projects__item-link:first-of-type {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.projects__item-link:last-of-type {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.projects__img-wrapper {
+    width: 49%;
+    text-align: center;
+}
+
+.exp__title-item {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.exp__subtitle {
+    margin-bottom: 10px;
+}
+
+.exp__item {
+    margin-bottom: 24px;
+}
+
+.exp__text {
+    text-align: justify;
+}
+
+.lang-list {
+    margin-bottom: 24px;
+}
+
+.lang-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}

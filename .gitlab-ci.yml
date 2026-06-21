@@ -1,0 +1,58 @@
+# image: node:lts
+
+# stages: [build, deploy]
+
+# cache:
+#   key: ${CI_COMMIT_REF_SLUG}
+#   paths:
+#     - node_modules/
+
+# # Сборка + подготовка public/
+# build:
+#   stage: build
+#   script:
+#     - npm run gitlabDeploy
+#   artifacts:
+#     paths:
+#       - public
+#     expire_in: 1 week
+#   rules:
+#     - if: $CI_COMMIT_BRANCH   # запускаем на любые ветки
+
+# # Публикация на GitLab Pages
+# pages:
+#   stage: deploy
+#   dependencies:
+#     - build
+#   script:
+#     - echo "Deploying GitLab Pages"
+#   artifacts:
+#     paths:
+#       - public
+#   rules:
+#     - if: $CI_COMMIT_BRANCH == "main"   # публикуем только из main
+
+image: node:lts
+
+stages: [deploy]
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+pages:
+  stage: deploy
+  script:
+    - npm ci
+    - npm run product                 # твой gulp product
+    - rm -rf public && mkdir -p public
+    - cp -r dist/* public/
+    - du -sh public || true           # необязательно, просто видно размер артефакта
+  artifacts:
+    paths:
+      - public
+    expire_in: 7 days
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'   # публикуем только из main
+#  tags: ["your-runner-tag"]              # раскомментируй, если используешь свой раннер

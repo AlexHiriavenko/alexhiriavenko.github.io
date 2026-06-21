@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../../html/head.html', {"title":"Certificates"})
+  <body>
+    @@include('../../html/header.html', {})
+    <div class="container">@@include('../../html/cert.html', {})</div>
+    @@include('../../html/footer.html', {})
+
+    <!-- Lightbox -->
+    <div class="lb" id="lightbox" role="dialog" aria-modal="true" hidden>
+      <div class="lb__backdrop" data-lb-close></div>
+
+      <figure class="lb__content" aria-label="Certificate preview">
+        <button class="lb__close" type="button" aria-label="Close" data-lb-close>✕</button>
+        <img class="lb__img" alt="" />
+      </figure>
+    </div>
+
+    <!-- Lightbox -->
+    <script src="@js/app.min.js"></script>
+    <!-- Masonry -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </body>
+</html>

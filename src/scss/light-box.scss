@@ -1,0 +1,67 @@
+/* ===== Lightbox ===== */
+.lb[hidden] { display: none; }
+
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+
+.lb__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.lb__content {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  opacity: 0;
+  transform: scale(.98);
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.lb--open .lb__backdrop { opacity: 1; }
+.lb--open .lb__content  { opacity: 1; transform: scale(1); }
+
+.lb__img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.lb__close {
+  position: absolute;
+  top: 4px; right: 4px;
+  width: 48px; height: 48px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(33,150,243, .9);
+  color: #fff;
+  font-size: 22px;
+  line-height: 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,.3);
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .lb__close { top: 8px; right: 8px; }
+}
+
+/* чтобы фон не скроллился при открытом лайтбоксе */
+.body--lock { overflow: hidden; }

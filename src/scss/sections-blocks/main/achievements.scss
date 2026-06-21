@@ -1,0 +1,9 @@
+.achievements__item {
+  padding: 6px;
+  line-height: 1.1;
+}
+
+.achievements__item::before {
+  content: '✔';
+  margin-right: 8px;
+}
