@@ -51,6 +51,7 @@
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^11.0.1",
+    "nunjucks": "^3.2.4",
     "sass": "^1.92.1",
     "webpack": "^5.101.3",
     "webpack-stream": "^7.0.0"
