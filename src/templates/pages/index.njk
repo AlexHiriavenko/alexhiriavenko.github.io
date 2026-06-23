@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ locale.htmlLang }}">
+  {% set title = page.seo.title %}
+  {% include "partials/head.njk" %}
+  <body>
+    {% include "partials/header.njk" %}
+    <div class="container">
+      {% include "partials/main.njk" %}
+      {% include "partials/aside.njk" %}
+    </div>
+    {% include "partials/footer.njk" %}
+    <script src="{{ assetPath }}js/app.min.js"></script>
+  </body>
+</html>
