@@ -4,6 +4,7 @@ import * as nodePath from "node:path";
 import { locales, defaultLocale } from "../../src/data/locales.js";
 import { routes } from "../../src/data/routes.js";
 import { site } from "../../src/data/site.js";
+import { translations } from "../../src/i18n/index.js";
 
 const toSegments = (value) => value.split("/").filter(Boolean);
 
@@ -73,6 +74,10 @@ const getRoutePageData = (route, locale, outputSegments) => {
   };
 };
 
+const getTranslations = (locale) => {
+  return translations[locale.code] ?? translations[defaultLocale];
+};
+
 export const htmlI18n = async () => {
   const templatesDir = nodePath.join(app.path.srcFolder, "templates");
   const env = nunjucks.configure(templatesDir, {
@@ -92,6 +97,7 @@ export const htmlI18n = async () => {
         locales,
         route,
         routes,
+        t: getTranslations(locale),
         page: getRoutePageData(route, locale, outputSegments),
         languageLinks: getLanguageLinks(outputSegments, route),
         site,
