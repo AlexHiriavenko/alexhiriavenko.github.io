@@ -21,5 +21,21 @@
       </li>
     </ul>
   </nav>
+  <label class="language-select" for="language-select" aria-label="Select language">
+    <select
+      id="language-select"
+      name="language"
+      class="language-select__control"
+      data-language-select
+      data-current-locale="{{ locale.code }}"
+      data-current-route="{{ route.id }}"
+    >
+      {% for language in languageLinks %}
+      <option value="{{ language.url }}" data-locale="{{ language.code }}" {% if language.code == locale.code %}selected{% endif %}>
+        {{ language.shortLabel }}
+      </option>
+      {% endfor %}
+    </select>
+  </label>
   <button class="burger-btn">Menu</button>
 </header>

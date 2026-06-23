@@ -11,6 +11,31 @@ const getRelativePath = (depth) => {
   return "../".repeat(depth);
 };
 
+const getPageUrl = (segments) => {
+  const url = segments.join("/");
+  return url ? `${url}/` : "";
+};
+
+const getRelativePageUrl = (fromSegments, toSegments) => {
+  const fromPath = getPageUrl(fromSegments);
+  const toPath = getPageUrl(toSegments);
+  const relativePath = nodePath.posix.relative(fromPath, toPath);
+
+  if (!relativePath) return "./";
+  return `${relativePath}/`;
+};
+
+const getLanguageLinks = (currentOutputSegments, route) => {
+  return locales.map((locale) => {
+    const targetSegments = [...toSegments(locale.basePath), ...toSegments(route.outputPath)];
+
+    return {
+      ...locale,
+      url: getRelativePageUrl(currentOutputSegments, targetSegments),
+    };
+  });
+};
+
 const getRoutePageData = (route, locale) => {
   const seo = route.seo?.[locale.code] ?? route.seo?.[defaultLocale] ?? {};
 
@@ -41,6 +66,7 @@ export const htmlI18n = async () => {
         route,
         routes,
         page: getRoutePageData(route, locale),
+        languageLinks: getLanguageLinks(outputSegments, route),
         assetPath: getRelativePath(outputSegments.length),
         localePath: getRelativePath(routeDepth),
       });
