@@ -5,15 +5,15 @@ export const routes = [
     outputPath: "",
     seo: {
       en: {
-        title: "Alex Giryavenko CV",
+        title: "Alex Hiriavenko CV",
         description: "Fullstack Developer CV. Node.js, NestJS, Vue, PostgreSQL.",
       },
       ru: {
-        title: "Alex Giryavenko CV",
+        title: "Alex Hiriavenko CV",
         description: "Fullstack Developer CV. Node.js, NestJS, Vue, PostgreSQL.",
       },
       uk: {
-        title: "Alex Giryavenko CV",
+        title: "Alex Hiriavenko CV",
         description: "Fullstack Developer CV. Node.js, NestJS, Vue, PostgreSQL.",
       },
     },
@@ -24,16 +24,16 @@ export const routes = [
     outputPath: "certificates",
     seo: {
       en: {
-        title: "Certificates | Alex Giryavenko",
-        description: "Professional certificates and completed courses by Alex Giryavenko.",
+        title: "Certificates | Alex Hiriavenko",
+        description: "Professional certificates and completed courses by Alex Hiriavenko.",
       },
       ru: {
-        title: "Certificates | Alex Giryavenko",
-        description: "Professional certificates and completed courses by Alex Giryavenko.",
+        title: "Certificates | Alex Hiriavenko",
+        description: "Professional certificates and completed courses by Alex Hiriavenko.",
       },
       uk: {
-        title: "Certificates | Alex Giryavenko",
-        description: "Professional certificates and completed courses by Alex Giryavenko.",
+        title: "Certificates | Alex Hiriavenko",
+        description: "Professional certificates and completed courses by Alex Hiriavenko.",
       },
     },
   },

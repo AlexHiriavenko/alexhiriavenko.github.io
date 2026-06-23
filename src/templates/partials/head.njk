@@ -3,19 +3,33 @@
   <title>{{ title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ page.seo.description }}" />
+  <link rel="canonical" href="{{ page.canonicalUrl }}" />
+  {% for alternate in page.alternateLinks %}
+  <link rel="alternate" hreflang="{{ alternate.hreflang }}" href="{{ alternate.url }}" />
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ page.xDefaultUrl }}" />
   <!-- JSON-LD: Person -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Alex (Oleksiy) Giryavenko",
+      "name": "Alex Hiriavenko",
+      "alternateName": [
+        "Oleksii Hiriavenko",
+        "Oleksiy Hiriavenko",
+        "Alexey Hiriavenko",
+        "Alex Giryavenko",
+        "Alexey Giryavenko",
+        "Oleksii Giryavenko",
+        "Oleksiy Giryavenko"
+      ],
       "jobTitle": "Fullstack Developer",
-      "image": "https://alexhiriavenko.github.io/CV/img/user-photo.jpg",
+      "image": "{{ site.url }}/img/user-photo.jpg",
       "email": "mailto:martmarchmartmarch@gmail.com",
       "telephone": "+380504716006",
-      "url": "https://ma_rch.gitlab.io/cv_fullstack_alex_giryavenko/",
+      "url": "{{ site.url }}/",
       "sameAs": [
-        "https://www.linkedin.com/in/oleksii-hiriavenko/",
+        "https://www.linkedin.com/in/alex-hiriavenko/",
         "https://github.com/AlexHiriavenko",
         "https://t.me/AlexHiriavenko"
       ],

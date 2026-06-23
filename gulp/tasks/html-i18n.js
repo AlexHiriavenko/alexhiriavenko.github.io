@@ -3,6 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import * as nodePath from "node:path";
 import { locales, defaultLocale } from "../../src/data/locales.js";
 import { routes } from "../../src/data/routes.js";
+import { site } from "../../src/data/site.js";
 
 const toSegments = (value) => value.split("/").filter(Boolean);
 
@@ -14,6 +15,13 @@ const getRelativePath = (depth) => {
 const getPageUrl = (segments) => {
   const url = segments.join("/");
   return url ? `${url}/` : "";
+};
+
+const getAbsolutePageUrl = (segments) => {
+  const baseUrl = site.url.replace(/\/$/, "");
+  const pageUrl = getPageUrl(segments);
+
+  return pageUrl ? `${baseUrl}/${pageUrl}` : `${baseUrl}/`;
 };
 
 const getRelativePageUrl = (fromSegments, toSegments) => {
@@ -36,13 +44,32 @@ const getLanguageLinks = (currentOutputSegments, route) => {
   });
 };
 
-const getRoutePageData = (route, locale) => {
+const getAlternateLinks = (route) => {
+  return locales.map((locale) => {
+    const targetSegments = [...toSegments(locale.basePath), ...toSegments(route.outputPath)];
+
+    return {
+      hreflang: locale.htmlLang,
+      url: getAbsolutePageUrl(targetSegments),
+    };
+  });
+};
+
+const getRoutePageData = (route, locale, outputSegments) => {
   const seo = route.seo?.[locale.code] ?? route.seo?.[defaultLocale] ?? {};
+  const defaultLocaleConfig = locales.find((item) => item.code === defaultLocale);
+  const defaultSegments = [
+    ...toSegments(defaultLocaleConfig?.basePath ?? ""),
+    ...toSegments(route.outputPath),
+  ];
 
   return {
     id: route.id,
     outputPath: route.outputPath,
     seo,
+    canonicalUrl: getAbsolutePageUrl(outputSegments),
+    alternateLinks: getAlternateLinks(route),
+    xDefaultUrl: getAbsolutePageUrl(defaultSegments),
   };
 };
 
@@ -65,8 +92,9 @@ export const htmlI18n = async () => {
         locales,
         route,
         routes,
-        page: getRoutePageData(route, locale),
+        page: getRoutePageData(route, locale, outputSegments),
         languageLinks: getLanguageLinks(outputSegments, route),
+        site,
         assetPath: getRelativePath(outputSegments.length),
         localePath: getRelativePath(routeDepth),
       });
