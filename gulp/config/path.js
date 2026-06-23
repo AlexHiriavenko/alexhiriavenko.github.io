@@ -20,6 +20,8 @@ export const path = {
     // основной вход
     html: `${srcFolder}/*.html`,
     pages: [`${srcFolder}/pages/certificates/*.html`, `${srcFolder}/pages/about/*.html`],
+    templates: `${srcFolder}/templates/**/*.njk`,
+    data: `${srcFolder}/data/**/*.js`,
     scss: `${srcFolder}/scss/styles.scss`,
     js: `${srcFolder}/js/app.js`,
 
@@ -32,6 +34,8 @@ export const path = {
   watch: {
     html: `${srcFolder}/**/*.html`,
     pages: `${srcFolder}/pages/**/*.html`,
+    templates: `${srcFolder}/templates/**/*.njk`,
+    data: `${srcFolder}/data/**/*.js`,
     scss: `${srcFolder}/scss/**/*.scss`,
     js: `${srcFolder}/js/**/*.js`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
