@@ -20,6 +20,7 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
 import { manifest } from "./gulp/tasks/manifest.js";
+import { htmlI18n } from "./gulp/tasks/html-i18n.js";
 // import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 
 // функция наблюдатель - выполнить функцию при изменении исходников.
@@ -47,6 +48,7 @@ const delDist = gulp.series(clear);
 export { dev };
 export { product };
 export { delDist };
+export { htmlI18n };
 
 // присваиваем dev - как задачу по умолчанию
 gulp.task("default", dev);
