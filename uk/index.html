@@ -3,9 +3,9 @@
   
   <head>
   <meta charset="utf-8" />
-  <title>Alex Hiriavenko CV</title>
+  <title>Alex Hiriavenko | Fullstack Developer резюме</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Fullstack Developer CV. Node.js, NestJS, Vue, PostgreSQL." />
+  <meta name="description" content="Резюме Fullstack Developer: Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM-системи, розробка API та оптимізація продуктивності." />
   <link rel="canonical" href="https://alexhiriavenko.github.io/uk/" />
   
   <link rel="alternate" hreflang="en" href="https://alexhiriavenko.github.io/" />
@@ -18,32 +18,95 @@
   <!-- JSON-LD: Person -->
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Alex Hiriavenko",
-      "alternateName": [
-        "Oleksii Hiriavenko",
-        "Oleksiy Hiriavenko",
-        "Alexey Hiriavenko",
-        "Alex Giryavenko",
-        "Alexey Giryavenko",
-        "Oleksii Giryavenko",
-        "Oleksiy Giryavenko"
-      ],
-      "jobTitle": "Fullstack Developer",
-      "image": "https://alexhiriavenko.github.io/img/user-photo.jpg",
-      "email": "mailto:martmarchmartmarch@gmail.com",
-      "telephone": "+380504716006",
-      "url": "https://alexhiriavenko.github.io/",
-      "sameAs": [
-        "https://www.linkedin.com/in/alex-hiriavenko/",
-        "https://github.com/AlexHiriavenko",
-        "https://t.me/AlexHiriavenko"
-      ],
-      "knowsLanguage": ["uk", "en", "ru"]
-    }
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://alexhiriavenko.github.io/#person",
+  "name": "Alex Hiriavenko",
+  "givenName": "Alex",
+  "familyName": "Hiriavenko",
+  "alternateName": [
+    "Oleksii Hiriavenko",
+    "Oleksiy Hiriavenko",
+    "Alexey Hiriavenko",
+    "Alex Giryavenko",
+    "Alexey Giryavenko",
+    "Oleksii Giryavenko",
+    "Oleksiy Giryavenko"
+  ],
+  "description": "Fullstack Developer specializing in Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM systems, API development, and performance optimization.",
+  "jobTitle": "Fullstack Developer",
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Fullstack Developer",
+    "occupationalCategory": "Software Developer",
+    "skills": [
+      "Fullstack Development",
+      "Frontend Development",
+      "Backend Development",
+      "Laravel Development",
+      "API Development",
+      "Database Optimization",
+      "Performance Optimization",
+      "CRM Systems"
+    ]
+  },
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Vue.js",
+    "Node.js",
+    "NestJS",
+    "Laravel",
+    "PostgreSQL",
+    "TypeORM",
+    "REST API Development",
+    "CRM Systems",
+    "Performance Optimization",
+    "Database Optimization",
+    "Clean Architecture",
+    "Docker",
+    "AWS S3"
+  ],
+  "knowsAbout": [
+    "Fullstack Development",
+    "Frontend Development",
+    "Backend Development",
+    "Laravel Development",
+    "Healthcare CRM",
+    "Patient-facing digital platforms",
+    "API Design",
+    "Database Query Optimization",
+    "Real-time Features",
+    "Reusable UI Components",
+    "AI-assisted Development"
+  ],
+  "knowsLanguage": [
+    "uk",
+    "en",
+    "ru"
+  ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Donetsk National University of Economics and Trade"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Palmo"
+  },
+  "image": "https://alexhiriavenko.github.io/img/user-photo.jpg",
+  "email": "mailto:martmarchmartmarch@gmail.com",
+  "telephone": "+380504716006",
+  "url": "https://alexhiriavenko.github.io/",
+  "mainEntityOfPage": "https://alexhiriavenko.github.io/",
+  "sameAs": [
+    "https://www.linkedin.com/in/alex-hiriavenko/",
+    "https://github.com/AlexHiriavenko",
+    "https://t.me/AlexHiriavenko",
+    "https://www.facebook.com/alexey.giryavenko"
+  ]
+}
   </script>
-  ﻿<!-- Favicon Р±Р°Р·РѕРІС‹Рµ -->
+  <!-- Favicon -->
 <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/cv32.png" />
 <link rel="icon" type="image/png" sizes="64x64" href="../img/favicon/cv64.png" />
 <link rel="icon" type="image/png" sizes="128x128" href="../img/favicon/cv128.png" />
@@ -51,12 +114,12 @@
 <link rel="icon" type="image/png" sizes="512x512" href="../img/favicon/cv512.png" />
 
 <!-- Apple (iOS / iPadOS) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/cv180.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/cv180.png" />
 
 <!-- PWA manifest -->
 <link rel="manifest" href="../manifest.webmanifest" />
 
-<!-- Р¦РІРµС‚ Р°РґСЂРµСЃРЅРѕР№ СЃС‚СЂРѕРєРё (Android/Chrome, Windows tiles) -->
+<!-- Browser theme colors -->
 <meta name="theme-color" content="#0f172a" />
 <meta name="msapplication-TileColor" content="#0f172a" />
 
@@ -64,30 +127,40 @@
 </head>
 
   <body>
-    ﻿<header>
+    <header>
   <div class="header__avatar">
-    <img src="../img/user-photo.jpg" alt="person photo" width="54" height="54" class="avatar__img" />
+    <img
+      src="../img/user-photo.jpg"
+      alt="фото профілю"
+      width="54"
+      height="54"
+      class="avatar__img"
+    />
   </div>
   <nav>
     <ul class="nav-list">
       <li>
-        <a class="nav-link" href="./#summary">Summary</a>
+        <a class="nav-link" href="./#summary">Про мене</a>
       </li>
       <li>
-        <a class="nav-link" href="./#achievements">Achievements</a>
+        <a class="nav-link" href="./#achievements">
+          Досягнення
+        </a>
       </li>
       <li>
-        <a class="nav-link" href="./#exp">Experience</a>
+        <a class="nav-link" href="./#exp">Досвід</a>
       </li>
       <li>
-        <a class="nav-link" href="./#education">Education</a>
+        <a class="nav-link" href="./#education">Освіта</a>
       </li>
       <li>
-        <a class="nav-link cert" href="./certificates/">Certificates</a>
+        <a class="nav-link cert" href="./certificates/">
+          Сертифікати
+        </a>
       </li>
     </ul>
   </nav>
-  <label class="language-select" for="language-select" aria-label="Select language">
+  <label class="language-select" for="language-select" aria-label="Вибрати мову">
     <select
       id="language-select"
       name="language"
@@ -111,7 +184,7 @@
       
     </select>
   </label>
-  <button class="burger-btn">Menu</button>
+  <button class="burger-btn">Меню</button>
 </header>
 
     <div class="container">
@@ -119,176 +192,152 @@
   <h1 class="cv-title">Alex Hiriavenko</h1>
   <h2 class="cv-subtitle">Fullstack Developer</h2>
 
-  ﻿<section id="summary" aria-labelledby="summary-title">
-  <h3 id="summary-title" class="section-title">Summary</h3>
-  <p class="about-text">
-    Full-Stack Developer (Vue.js, NodeJS, NestJS, TypeORM, PostgreSQL) with hands-on experience
-    building and maintaining high-load CRM systems (≈3K users, healthcare domain).
-  </p>
-  <p class="about-text">
-    Strong background in designing scalable APIs, database optimization, and real-time features.
-    Passionate about performance, clean architecture, and delivering reliable solutions that improve
-    user experience and business efficiency.
-  </p>
-  <p class="about-text">
-    Graduate of the IT Generation program by the Ministry of Digital Transformation of Ukraine.
-  </p>
+  <section id="summary" aria-labelledby="summary-title">
+  <h3 id="summary-title" class="section-title">Про мене</h3>
+
+  
+  <p class="about-text">Full-Stack Developer (Vue.js, NodeJS, NestJS, Laravel, TypeORM, PostgreSQL) з практичним досвідом розробки та підтримки високонавантажених CRM-систем (≈3K користувачів, healthcare domain).</p>
+  
+  <p class="about-text">Маю сильний досвід у проєктуванні масштабованих API, оптимізації баз даних і розробці real-time функціональності. Фокусуюся на продуктивності, чистій архітектурі та надійних рішеннях, які покращують користувацький досвід і ефективність бізнесу.</p>
+  
+  <p class="about-text">Випускник програми IT Generation від Міністерства цифрової трансформації України.</p>
+  
 </section>
 
-  ﻿<section class="experience" id="achievements" aria-labelledby="experience-title">
-  <h3 id="experience-title" class="section-title">Achievements</h3>
+  <section class="experience" id="achievements" aria-labelledby="achievements-title">
+  <h3 id="achievements-title" class="section-title">Досягнення</h3>
 
   <ul class="exp__list">
     <li class="exp__item">
-      <article aria-labelledby="exp-internship-title">
+      <article aria-labelledby="achievements-title">
         <ul class="achievements__list">
-          <li class="achievements__item">
-            Improved page load speed by <strong>30–80%</strong> across frontend and backend flows by
-            trimming unnecessary payload data, removing redundant server requests, and optimizing
-            PostgreSQL queries.
-          </li>
-          <li class="achievements__item">
-            Implemented backend proxy for S3 file delivery вћњ improved security (no direct public
-            links) and reduced frontend integration complexity.
-          </li>
-          <li class="achievements__item">
-            Delivered a reusable <strong>Task Templates module</strong> for CRM вћњ employees create
-            new tasks faster and with fewer errors, improving overall workflow efficiency.
-          </li>
-          <li class="achievements__item">
-            Built reusable <strong>Vue composables</strong> and base UI components, including a
-            screenshot upload flow reused in 3 modules (news, comments, tasks) вћњ reduced code
-            duplication and accelerated feature delivery across the project.
-          </li>
-          <li class="achievements__item">
-            Delivered high-load healthcare CRM modules (≈3K users) ensuring stability and
-            performance under peak load.
-          </li>
-          <li class="achievements__item">Awarded <strong>IT Generation grant</strong>.</li>
+          
+          <li class="achievements__item">Покращив швидкість завантаження сторінок на <strong>30-80%</strong> у frontend і backend сценаріях завдяки зменшенню зайвих даних у payload, видаленню надлишкових серверних запитів та оптимізації PostgreSQL-запитів.</li>
+          
+          <li class="achievements__item">Реалізував backend proxy для доставки файлів із S3 - підвищив безпеку (без прямих публічних посилань) і спростив інтеграцію на frontend.</li>
+          
+          <li class="achievements__item">Розробив перевикористовуваний <strong>модуль шаблонів задач</strong> для CRM - співробітники створюють нові задачі швидше та з меншою кількістю помилок, що підвищує ефективність робочих процесів.</li>
+          
+          <li class="achievements__item">Створив перевикористовувані <strong>Vue composables</strong> і базові UI-компоненти, включно з flow завантаження скриншотів, який використовується в 3 модулях (новини, коментарі, задачі) - зменшив дублювання коду та прискорив розробку функціональності.</li>
+          
+          <li class="achievements__item">Розробляв модулі високонавантаженої healthcare CRM (≈3K користувачів), забезпечуючи стабільність і продуктивність під піковим навантаженням.</li>
+          
+          <li class="achievements__item">Отримав <strong>грант IT Generation</strong>.</li>
+          
         </ul>
       </article>
     </li>
   </ul>
 </section>
 
-  ﻿<section class="experience" id="exp" aria-labelledby="experience-title">
-  <h3 id="experience-title" class="section-title">Experience</h3>
+  <section class="experience" id="exp" aria-labelledby="experience-title">
+  <h3 id="experience-title" class="section-title">Досвід</h3>
 
   <ul class="exp__list">
-    <!-- Palmo -->
+    
     <li class="exp__item">
       <article aria-labelledby="exp-palmo-title">
         <h4 id="exp-palmo-title" class="exp__title-item">Fullstack Developer</h4>
-        <h5 class="exp__subtitle">Palmo (<time datetime="2024">2024 – Present</time>)</h5>
+        <h5 class="exp__subtitle">
+          Palmo (<time datetime="2024">2024 - дотепер</time>)
+        </h5>
         <ul class="experience__details">
-          <li class="section-item-text">
-            Developed healthcare CRM modules, patient portal (personal cabinet), and Telegram bot,
-            improving workflows and overall system stability.
-          </li>
-          <li class="section-item-text">
-            Optimized PostgreSQL queries and API performance with caching and indexing.
-          </li>
-          <li class="section-item-text">
-            Enhanced front-end interfaces and introduced reusable hooks/components to accelerate
-            delivery.
-          </li>
-          <li class="section-item-text">
-            Collaborated in agile teams with analysts, developers, QA, and DevOps, contributing to
-            design.
-          </li>
+          
+          <li class="section-item-text">Розробляв і підтримував цифрову платформу ON Clinic для взаємодії з пацієнтами: публічний медичний сайт, кабінет пацієнта, CRM-модулі, Telegram-бота, а також сценарії онлайн-запису й оплати для мережі медичних центрів.</li>
+          
+          <li class="section-item-text">Оптимізував PostgreSQL-запити та продуктивність API за допомогою кешування й індексації.</li>
+          
+          <li class="section-item-text">Покращував frontend-інтерфейси та впроваджував перевикористовувані hooks/components для пришвидшення розробки.</li>
+          
+          <li class="section-item-text">Працював в agile-командах з аналітиками, розробниками, QA та DevOps, беручи участь у проєктуванні рішень.</li>
+          
         </ul>
       </article>
     </li>
-
-    <!-- DAN.IT Internship -->
+    
     <li class="exp__item">
       <article aria-labelledby="exp-internship-title">
         <h4 id="exp-internship-title" class="exp__title-item">Front End Developer Internship</h4>
-        <h5 class="exp__subtitle">DAN.IT (<time datetime="2023">2023</time>)</h5>
+        <h5 class="exp__subtitle">
+          DAN.IT (<time datetime="2023">2023</time>)
+        </h5>
         <ul class="experience__details">
-          <li class="section-item-text">
-            Gained hands-on experience working in teams of 3вЂ“9 people on full-cycle projects.
-          </li>
-          <li class="section-item-text">
-            Took the role of team lead in one project, coordinating task distribution and mentoring
-            peers.
-          </li>
-          <li class="section-item-text">Built a social network project using React, Redux, MUI</li>
+          
+          <li class="section-item-text">Отримав практичний досвід роботи в командах із 3-9 людей над full-cycle проєктами.</li>
+          
+          <li class="section-item-text">В одному з проєктів виконував роль team lead: координував розподіл задач і допомагав учасникам команди.</li>
+          
+          <li class="section-item-text">Розробив проєкт соціальної мережі з використанням React, Redux, MUI.</li>
+          
         </ul>
       </article>
     </li>
+    
   </ul>
 </section>
 
-  ﻿<section class="experience" aria-labelledby="additional-exp-title">
-  <h3 id="additional-exp-title" class="section-title">Additional Experience</h3>
+  <section class="experience" aria-labelledby="additional-exp-title">
+  <h3 id="additional-exp-title" class="section-title">Додатковий досвід</h3>
 
   <ul class="exp__list">
+    
     <li class="exp__item">
       <article aria-labelledby="exp-logika-title">
-        <h4 id="exp-logika-title" class="exp__title-item">
-          Web Development Instructor (Logika School)
-        </h4>
-        <p class="exp__text">
-          Taught school-age students web development and frontend fundamentals, explaining HTML,
-          CSS, JavaScript basics, and practical project structure in an accessible way.
-        </p>
+        <h4 id="exp-logika-title" class="exp__title-item">Викладач веб-розробки (Logika School)</h4>
+        <p class="exp__text">Навчав школярів веб-розробці та основам frontend, пояснюючи HTML, CSS, базовий JavaScript і практичну структуру проєктів доступною мовою.</p>
       </article>
     </li>
-
+    
     <li class="exp__item">
       <article aria-labelledby="exp-vhh-title">
-        <h4 id="exp-vhh-title" class="exp__title-item">Purchasing Manager (VHH Group)</h4>
-        <p class="exp__text">
-          Ensured uninterrupted supply of equipment, components, and materials. Conducted market
-          analysis, negotiated and concluded contracts, monitored quality of goods and services.
-        </p>
+        <h4 id="exp-vhh-title" class="exp__title-item">Менеджер із закупівель (VHH Group)</h4>
+        <p class="exp__text">Забезпечував безперебійні постачання обладнання, комплектуючих і матеріалів. Проводив аналіз ринку, вів переговори та укладав договори, контролював якість товарів і послуг.</p>
       </article>
     </li>
-
+    
     <li class="exp__item">
       <article aria-labelledby="exp-effect-title">
-        <h4 id="exp-effect-title" class="exp__title-item">
-          Category Purchasing Manager (LLC "Effect")
-        </h4>
-        <p class="exp__text">
-          Managed procurement in assigned category, negotiated supplier contracts, and improved
-          inventory turnover. Conducted demand forecasting and market trend analysis to increase
-          sales and turnover.
-        </p>
+        <h4 id="exp-effect-title" class="exp__title-item">Категорійний менеджер із закупівель (ТОВ "Ефект")</h4>
+        <p class="exp__text">Керував закупівлями в закріпленій категорії, вів переговори з постачальниками та покращував оборотність товарних запасів. Проводив прогнозування попиту й аналіз ринкових тенденцій для збільшення продажів та обороту.</p>
       </article>
     </li>
+    
   </ul>
 </section>
 
-  ﻿<section class="experience" id="education" aria-labelledby="prev-exp-title">
-  <h3 id="prev-exp-title" class="section-title">Education</h3>
+  <section class="experience" id="education" aria-labelledby="education-title">
+  <h3 id="education-title" class="section-title">Освіта</h3>
   <ul class="exp__list">
+    
     <li class="exp__item">
       <article aria-labelledby="edu-engineer-title">
-        <h4 id="edu-engineer-title" class="edu__title-item">Processing Equipment Engineer</h4>
-        <p class="edu__text mt-10">Donetsk National University of Economics and Trade</p>
-        <p class="edu__text">Specialist Degree</p>
+        <h4 id="edu-engineer-title" class="edu__title-item">Вища освіта: інженер технологічного обладнання</h4>
+        <p class="edu__text mt-10">Донецький національний університет економіки і торгівлі</p>
+        <p class="edu__text">Диплом спеціаліста</p>
       </article>
     </li>
+    
   </ul>
 </section>
 
-  ﻿<section class="projects" aria-labelledby="projects-title">
-  <h3 id="projects-title" class="section-title">Educational &amp; Pet Projects</h3>
-  <p class="section-item-text projects__note">
-    Non-commercial projects built during training and personal practice.
-  </p>
+  <section class="projects" aria-labelledby="projects-title">
+  <h3 id="projects-title" class="section-title">Навчальні та pet-проєкти</h3>
+  <p class="section-item-text projects__note">Некомерційні проєкти, створені під час навчання та особистої практики.</p>
 
   <ul>
-    <li>
-      <article aria-labelledby="proj-medical-title">
-        <h4 id="proj-medical-title" class="projects__item-title">- Star Wars:</h4>
+    
+    <li class="projects__item">
+      <article aria-labelledby="proj-star-wars-title">
+        <h4 id="proj-star-wars-title" class="projects__item-title">- Star Wars:</h4>
 
         <div class="projects__item-description">
           <div class="projects__item-description-wrapper">
-            <p class="projects__item-description-text">Star Wars characters (React).</p>
-            <p class="projects__item-description-text">RTK Query and Routing</p>
+            
+            <p class="projects__item-description-text">Персонажі Star Wars.</p>
+            
+            <p class="projects__item-description-text">
+              <strong>Основні технології:</strong> React, RTK Query, Routing
+            </p>
 
             <div>
               <a
@@ -296,7 +345,7 @@
                 href="https://react-starwars.netlify.app/"
                 target="_blank"
                 rel="noopener"
-                >website link</a
+                >сайт</a
               >
               /
               <a
@@ -304,7 +353,7 @@
                 href="https://github.com/AlexHiriavenko/React_StarWars/tree/api-queries"
                 target="_blank"
                 rel="noopener"
-                >repository link</a
+                >репозиторій</a
               >
             </div>
           </div>
@@ -318,7 +367,7 @@
             >
               <img
                 src="../img/projects/star_wars.jpg"
-                alt="Medical Portal вЂ” app preview"
+                alt="Превʼю застосунку Star Wars"
                 width="100"
                 loading="lazy"
               />
@@ -327,15 +376,18 @@
         </div>
       </article>
     </li>
-
-    <li>
-      <article aria-labelledby="proj-forcio-title">
-        <h4 id="proj-forcio-title" class="projects__item-title">- Nonograms Game:</h4>
+    
+    <li class="projects__item">
+      <article aria-labelledby="proj-nonograms-title">
+        <h4 id="proj-nonograms-title" class="projects__item-title">- Nonograms Game:</h4>
 
         <div class="projects__item-description">
           <div class="projects__item-description-wrapper">
+            
+            <p class="projects__item-description-text">Логічна гра: японський кросворд.</p>
+            
             <p class="projects__item-description-text">
-              Logic puzzle: Japanese crossword. (JavaScript)
+              <strong>Основні технології:</strong> JavaScript
             </p>
 
             <div>
@@ -344,7 +396,7 @@
                 href="https://alexhiriavenko.github.io/Palmo-Edu/nonograms/"
                 target="_blank"
                 rel="noopener"
-                >website link</a
+                >сайт</a
               >
               /
               <a
@@ -352,7 +404,7 @@
                 href="https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Nonograms-App"
                 target="_blank"
                 rel="noopener"
-                >repository link</a
+                >репозиторій</a
               >
             </div>
           </div>
@@ -366,7 +418,7 @@
             >
               <img
                 src="../img/projects/nonograms.jpg"
-                alt="Nonograms Game preview"
+                alt="Превʼю гри Nonograms"
                 width="100"
                 loading="lazy"
               />
@@ -375,15 +427,18 @@
         </div>
       </article>
     </li>
-
-    <li>
-      <article aria-labelledby="proj-ham-title">
-        <h4 id="proj-ham-title" class="projects__item-title">- Sports Events App:</h4>
+    
+    <li class="projects__item">
+      <article aria-labelledby="proj-sports-events-title">
+        <h4 id="proj-sports-events-title" class="projects__item-title">- Sports Events App:</h4>
 
         <div class="projects__item-description">
           <div class="projects__item-description-wrapper">
+            
+            <p class="projects__item-description-text">Сервіс бронювання спортивних подій.</p>
+            
             <p class="projects__item-description-text">
-              Sporting events booking service (Vue, Firebase).
+              <strong>Основні технології:</strong> Vue, Firebase
             </p>
 
             <div>
@@ -392,7 +447,7 @@
                 href="https://alexhiriavenko.github.io/Palmo-Edu/Sports-Events/"
                 target="_blank"
                 rel="noopener"
-                >website link</a
+                >сайт</a
               >
               /
               <a
@@ -400,7 +455,7 @@
                 href="https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Vue/Sports-Events-App"
                 target="_blank"
                 rel="noopener"
-                >repository link</a
+                >репозиторій</a
               >
             </div>
           </div>
@@ -414,7 +469,7 @@
             >
               <img
                 src="../img/projects/sports-events.jpg"
-                alt="Sports-Events preview"
+                alt="Превʼю Sports Events App"
                 width="100"
                 loading="lazy"
               />
@@ -423,21 +478,27 @@
         </div>
       </article>
     </li>
-
+    
     <li class="projects__item">
-      <article aria-labelledby="proj-privilege-title">
-        <h4 id="proj-privilege-title" class="projects__item-title">- EDOK:</h4>
+      <article aria-labelledby="proj-edok-title">
+        <h4 id="proj-edok-title" class="projects__item-title">- EDOK:</h4>
 
         <div class="projects__item-description">
           <div class="projects__item-description-wrapper">
-            <p class="projects__item-description-text">Food Delivery Service (Laravel, Vue).</p>
+            
+            <p class="projects__item-description-text">Сервіс доставки їжі.</p>
+            
+            <p class="projects__item-description-text">
+              <strong>Основні технології:</strong> Laravel, Vue
+            </p>
+
             <div>
               <a
                 class="projects__item-link"
                 href="https://alexhiriavenko.github.io/Restaurant-Vue/"
                 target="_blank"
                 rel="noopener"
-                >website link</a
+                >сайт</a
               >
               /
               <a
@@ -445,7 +506,7 @@
                 href="https://github.com/AlexHiriavenko/Restaurant-Vue"
                 target="_blank"
                 rel="noopener"
-                >repository link</a
+                >репозиторій</a
               >
             </div>
           </div>
@@ -459,7 +520,7 @@
             >
               <img
                 src="../img/projects/edok.jpg"
-                alt="Privilege Handmade вЂ” online store preview"
+                alt="Превʼю сервісу доставки їжі EDOK"
                 width="100"
                 loading="lazy"
               />
@@ -468,13 +529,14 @@
         </div>
       </article>
     </li>
+    
   </ul>
 </section>
 
 </main>
 
       <aside>
-  ﻿<div class="avatar">
+  <div class="avatar">
   <figure>
     <img
       src="../img/user-photo.jpg"
@@ -492,9 +554,9 @@
   </figure>
 </div>
 
-  ﻿<section class="contacts" aria-labelledby="contacts-title">
+  <section class="contacts" aria-labelledby="contacts-title">
   <h3 id="contacts-title" class="section-title">
-    <span>Contacts</span>
+    <span>Контакти</span>
     <span class="mobile-emoji">🖁</span>
   </h3>
 
@@ -524,7 +586,7 @@
           class="contacts__link"
           target="_blank"
           rel="noopener"
-          aria-label="LinkedIn profile"
+          aria-label="Профіль LinkedIn"
         >
           <img src="../img/icons/linkedin.svg" alt="" width="20" aria-hidden="true" />
           <span>LinkedIn</span>
@@ -548,7 +610,7 @@
           class="contacts__link"
           target="_blank"
           rel="noopener me"
-          aria-label="GitHub profile"
+          aria-label="Профіль GitHub"
         >
           <img src="../img/icons/github.svg" alt="" width="20" aria-hidden="true" />
           <span>Github</span>
@@ -558,15 +620,15 @@
   </address>
 </section>
 
-  ﻿<section class="skills" id="skills" aria-labelledby="skills-title">
+  <section class="skills" id="skills" aria-labelledby="skills-title">
   <h3 id="edu-title" class="section-title">
-    <span>Skills</span>
-    <img src="../img/icons/Ninja.svg" alt="book" width="16" />
+    <span>Навички</span>
+    <img src="../img/icons/Ninja.svg" alt="навички" width="16" />
   </h3>
 
   <!-- Languages -->
   <div class="skills__group" role="group" aria-labelledby="skills-languages-title">
-    <h4 id="skills-languages-title" class="skills__group-title">Languages</h4>
+    <h4 id="skills-languages-title" class="skills__group-title">Мови програмування</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -634,7 +696,7 @@
 
   <!-- Databases & ORM -->
   <div class="skills__group" role="group" aria-labelledby="skills-db-title">
-    <h4 id="skills-db-title" class="skills__group-title">Databases &amp; ORM</h4>
+    <h4 id="skills-db-title" class="skills__group-title">Бази даних та ORM</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -666,7 +728,7 @@
   <!-- State Management & Data Fetching -->
   <div class="skills__group" role="group" aria-labelledby="skills-state-title">
     <h4 id="skills-state-title" class="skills__group-title">
-      State Management &amp; Data Fetching
+      Керування станом і завантаження даних
     </h4>
     <ul class="skills__list">
       <li class="skills__item">
@@ -687,7 +749,7 @@
 
   <!-- Messaging & Real-time -->
   <div class="skills__group" role="group" aria-labelledby="skills-messaging-title">
-    <h4 id="skills-messaging-title" class="skills__group-title">Messaging &amp; Real-time</h4>
+    <h4 id="skills-messaging-title" class="skills__group-title">Повідомлення та real-time</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span>RabbitMQ</span>
@@ -702,7 +764,7 @@
 
   <!-- DevOps & Cloud -->
   <div class="skills__group" role="group" aria-labelledby="skills-devops-title">
-    <h4 id="skills-devops-title" class="skills__group-title">DevOps &amp; Cloud</h4>
+    <h4 id="skills-devops-title" class="skills__group-title">DevOps і Cloud</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span>Docker</span>
@@ -725,7 +787,7 @@
 
   <!-- Monitoring & Observability -->
   <div class="skills__group" role="group" aria-labelledby="skills-monitoring-title">
-    <h4 id="skills-monitoring-title" class="skills__group-title">Monitoring &amp; Observability</h4>
+    <h4 id="skills-monitoring-title" class="skills__group-title">Моніторинг і спостережуваність</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span>Lens</span>
@@ -741,7 +803,7 @@
 
   <!-- AI-assisted Development -->
   <div class="skills__group" role="group" aria-labelledby="skills-ai-title">
-    <h4 id="skills-ai-title" class="skills__group-title">AI-assisted Development</h4>
+    <h4 id="skills-ai-title" class="skills__group-title">Розробка з AI-асистентами</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -750,22 +812,22 @@
       </li>
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >IDE-integrated AI coding agents</span
+          >AI coding agents, інтегровані в IDE</span
         >
       </li>
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >AGENTS.md workflows</span
+          >Робочі процеси з AGENTS.md</span
         >
       </li>
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Code analysis, refactoring, bug fixing</span
+          >Аналіз коду, рефакторинг, виправлення помилок</span
         >
       </li>
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Test generation, AI change review</span
+          >Генерація тестів, AI-ревʼю змін</span
         >
       </li>
     </ul>
@@ -773,11 +835,11 @@
 
   <!-- Architecture & Practices -->
   <div class="skills__group" role="group" aria-labelledby="skills-architecture-title">
-    <h4 id="skills-architecture-title" class="skills__group-title">Architecture &amp; Practices</h4>
+    <h4 id="skills-architecture-title" class="skills__group-title">Архітектура та практики</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Clean Architecture</span
+          >Чиста архітектура</span
         >
       </li>
       <li class="skills__item">
@@ -785,39 +847,39 @@
       </li>
       <li class="skills__item">
         <img src="../img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Performance &amp; Profiling</span
+          >Продуктивність і профілювання</span
         >
       </li>
     </ul>
   </div>
 </section>
 
-  ﻿<section id="lang" aria-labelledby="lang-title">
+  <section id="lang" aria-labelledby="lang-title">
   <h3 id="lang-title" class="section-title">
-    <span>Languages</span>
+    <span>Мови</span>
     <span>🕊️</span>
   </h3>
 
   <ul class="sidebar__list lang-list">
     <li class="lang-item">
-      <img src="../img/icons/Flag_of_Ukraine_3.svg" alt="Ukrainian flag" width="20" />
-      <span>Ukrainian - native</span>
+      <img src="../img/icons/Flag_of_Ukraine_3.svg" alt="Прапор України" width="20" />
+      <span>Українська - рідна</span>
     </li>
     <li class="lang-item">
-      <img src="../img/icons/Flag_of_the_United_Kingdom_(3-5).svg" alt="UK flag" width="20" />
-      <span>English - intermediate (B1)</span>
+      <img src="../img/icons/Flag_of_the_United_Kingdom_(3-5).svg" alt="Прапор Великої Британії" width="20" />
+      <span>Англійська - intermediate (B1)</span>
     </li>
     <li class="lang-item">
-      <img src="../img/icons/Flag_of_Russia.svg" alt="Russian flag" width="20" />
-      <span>russian - fluent</span>
+      <img src="../img/icons/Flag_of_Russia.svg" alt="Прапор Росії" width="20" />
+      <span>Російська - вільно</span>
     </li>
   </ul>
 </section>
 
-  ﻿<section class="edu" id="edu" aria-labelledby="edu-title">
+  <section class="edu" id="edu" aria-labelledby="edu-title">
   <h3 id="edu-title" class="section-title">
-    <span>Courses</span>
-    <img src="../img/icons/courses.svg" alt="book" width="24" />
+    <span>Курси</span>
+    <img src="../img/icons/courses.svg" alt="курси" width="24" />
   </h3>
 
   <ul class="sidebar__list skills__list">
@@ -829,26 +891,26 @@
   </ul>
 </section>
 
-  ﻿<section aria-labelledby="certs-title">
+  <section aria-labelledby="certs-title">
   <h3 id="certs-title" class="section-title">
-    <span>Certificates</span>
+    <span>Сертифікати</span>
     <span>📃</span>
   </h3>
-  <a class="cert__link" href="./certificates/">click &#10153; here</a>
+  <a class="cert__link" href="./certificates/">&#10153; переглянути сертифікати</a>
 </section>
 
 </aside>
 
     </div>
-    ﻿<footer>
-  <ul class="footer__list" aria-label="Footer links and copyright">
+    <footer>
+  <ul class="footer__list" aria-label="Посилання у футері та авторські права">
     <li>
       <a
         class="github-item"
         href="https://github.com/AlexHiriavenko"
         target="_blank"
         rel="me noopener"
-        aria-label="GitHub вЂ” Alex Hiriavenko"
+        aria-label="GitHub — Alex Hiriavenko"
       >
         <img src="../img/icons/github.svg" alt="" width="26" />
         <span class="github-text">GitHub</span>
