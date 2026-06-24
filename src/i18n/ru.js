@@ -11,4 +11,8 @@ export const ru = {
     languageSelectLabel: "Выбрать язык",
     menuButton: "Меню",
   },
+  footer: {
+    linksLabel: "Ссылки в футере и авторские права",
+    githubProfileLabel: "GitHub — Alex Hiriavenko",
+  },
 };

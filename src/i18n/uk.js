@@ -11,4 +11,8 @@ export const uk = {
     languageSelectLabel: "Вибрати мову",
     menuButton: "Меню",
   },
+  footer: {
+    linksLabel: "Посилання у футері та авторські права",
+    githubProfileLabel: "GitHub — Alex Hiriavenko",
+  },
 };
