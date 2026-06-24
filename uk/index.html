@@ -3,9 +3,12 @@
   
   <head>
   <meta charset="utf-8" />
-  <title>Alex Hiriavenko | Fullstack Developer резюме</title>
+  <title>Олексій Гірявенко | Fullstack Developer резюме</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Резюме Fullstack Developer: Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM-системи, розробка API та оптимізація продуктивності." />
+  <meta name="description" content="Резюме та портфоліо Олексія Гірявенка, Fullstack розробника: Vue 3, Node.js, NestJS, Laravel, TypeScript, PHP, PostgreSQL, MySQL, CRM-системи, розробка API та оптимізація продуктивності." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Alex Hiriavenko" />
+  <meta name="theme-color" content="#0f172a" />
   <link rel="canonical" href="https://alexhiriavenko.github.io/uk/" />
   
   <link rel="alternate" hreflang="en" href="https://alexhiriavenko.github.io/" />
@@ -15,7 +18,27 @@
   <link rel="alternate" hreflang="uk" href="https://alexhiriavenko.github.io/uk/" />
   
   <link rel="alternate" hreflang="x-default" href="https://alexhiriavenko.github.io/" />
-  <!-- JSON-LD: Person -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Олексій Гірявенко | Fullstack Developer резюме" />
+  <meta property="og:description" content="Резюме та портфоліо Олексія Гірявенка, Fullstack розробника: Vue 3, Node.js, NestJS, Laravel, TypeScript, PHP, PostgreSQL, MySQL, CRM-системи, розробка API та оптимізація продуктивності." />
+  <meta property="og:url" content="https://alexhiriavenko.github.io/uk/" />
+  <meta property="og:site_name" content="Alex Hiriavenko CV" />
+  <meta property="og:image" content="https://alexhiriavenko.github.io/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Alex Hiriavenko — Fullstack Developer CV" />
+  <meta property="og:locale" content="uk_UA" />
+  
+  <meta property="og:locale:alternate" content="en_US" />
+  
+  <meta property="og:locale:alternate" content="ru_RU" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Олексій Гірявенко | Fullstack Developer резюме" />
+  <meta name="twitter:description" content="Резюме та портфоліо Олексія Гірявенка, Fullstack розробника: Vue 3, Node.js, NestJS, Laravel, TypeScript, PHP, PostgreSQL, MySQL, CRM-системи, розробка API та оптимізація продуктивності." />
+  <meta name="twitter:image" content="https://alexhiriavenko.github.io/img/og-image.png" />
+  <meta name="twitter:image:alt" content="Alex Hiriavenko — Fullstack Developer CV" />
+  <!-- JSON-LD graph: WebSite, ProfilePage, Person -->
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
@@ -33,9 +56,12 @@
         "Alex Giryavenko",
         "Alexey Giryavenko",
         "Oleksii Giryavenko",
-        "Oleksiy Giryavenko"
+        "Oleksiy Giryavenko",
+        "Алексей Гирявенко",
+        "Олексій Гірявенко",
+        "Алексій Гірявенко"
       ],
-      "description": "Fullstack Developer specializing in Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM systems, API development, and performance optimization.",
+      "description": "Fullstack Developer specializing in Vue 3, Node.js, NestJS, Laravel, TypeScript, PHP, PostgreSQL, MySQL, CRM systems, API development, and performance optimization.",
       "jobTitle": "Fullstack Developer",
       "hasOccupation": {
         "@type": "Occupation",
@@ -95,14 +121,17 @@
         "@type": "Organization",
         "name": "Palmo"
       },
-      "image": "https://alexhiriavenko.github.io/img/user-photo.jpg",
+      "image": "https://alexhiriavenko.github.io/img/profile-photo.png",
       "email": "mailto:martmarchmartmarch@gmail.com",
       "telephone": "+380504716006",
       "url": "https://alexhiriavenko.github.io/",
-      "mainEntityOfPage": "https://alexhiriavenko.github.io/",
+      "mainEntityOfPage": {
+        "@id": "https://alexhiriavenko.github.io/uk/#profile-page"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/alex-hiriavenko/",
         "https://github.com/AlexHiriavenko",
+        "https://gitlab.com/ma_rch",
         "https://t.me/AlexHiriavenko",
         "https://www.facebook.com/alexey.giryavenko"
       ]
@@ -123,9 +152,10 @@
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://alexhiriavenko.github.io/#profile-page",
-      "name": "Alex Hiriavenko CV",
-      "url": "https://alexhiriavenko.github.io/",
+      "@id": "https://alexhiriavenko.github.io/uk/#profile-page",
+      "name": "Alex Hiriavenko — Fullstack Developer CV",
+      "url": "https://alexhiriavenko.github.io/uk/",
+      "inLanguage": "uk",
       "isPartOf": {
         "@id": "https://alexhiriavenko.github.io/#website"
       },
@@ -149,8 +179,7 @@
 <!-- PWA manifest -->
 <link rel="manifest" href="../manifest.webmanifest" />
 
-<!-- Browser theme colors -->
-<meta name="theme-color" content="#0f172a" />
+<!-- Browser tile color -->
 <meta name="msapplication-TileColor" content="#0f172a" />
 
   <link href="../css/styles.min.css" rel="stylesheet" />
@@ -160,7 +189,7 @@
     <header>
   <div class="header__avatar">
     <img
-      src="../img/user-photo.jpg"
+      src="../img/profile-photo.png"
       alt="фото профілю"
       width="54"
       height="54"
@@ -190,7 +219,8 @@
       </li>
     </ul>
   </nav>
-  <label class="language-select" for="language-select" aria-label="Вибрати мову">
+  <label class="language-select" for="language-select">
+    <span hidden>Вибрати мову</span>
     <select
       id="language-select"
       name="language"
@@ -219,7 +249,7 @@
 
     <div class="container">
       <main>
-  <h1 class="cv-title">Alex Hiriavenko</h1>
+  <h1 class="cv-title">Олексій Гірявенко</h1>
   <h2 class="cv-subtitle">Fullstack Developer</h2>
 
   <section id="summary" aria-labelledby="summary-title">
@@ -239,7 +269,7 @@
 
   <ul class="exp__list">
     <li class="exp__item">
-      <article aria-labelledby="achievements-title">
+      <div>
         <ul class="achievements__list">
           
           <li class="achievements__item">Покращив швидкість завантаження сторінок на <strong>30-80%</strong> у frontend і backend сценаріях завдяки зменшенню зайвих даних у payload, видаленню надлишкових серверних запитів та оптимізації PostgreSQL-запитів.</li>
@@ -255,7 +285,7 @@
           <li class="achievements__item">Отримав <strong>грант IT Generation</strong>.</li>
           
         </ul>
-      </article>
+      </div>
     </li>
   </ul>
 </section>
@@ -569,7 +599,7 @@
   <div class="avatar">
   <figure>
     <img
-      src="../img/user-photo.jpg"
+      src="../img/profile-photo.png"
       alt="Portrait of Alex Hiriavenko"
       width="120"
       height="120"
@@ -612,7 +642,7 @@
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/oleksii-hiriavenko/"
+          href="https://www.linkedin.com/in/alex-hiriavenko/"
           class="contacts__link"
           target="_blank"
           rel="noopener"
@@ -651,7 +681,7 @@
 </section>
 
   <section class="skills" id="skills" aria-labelledby="skills-title">
-  <h3 id="edu-title" class="section-title">
+  <h3 id="skills-title" class="section-title">
     <span>Навички</span>
     <img src="../img/icons/Ninja.svg" alt="навички" width="16" />
   </h3>

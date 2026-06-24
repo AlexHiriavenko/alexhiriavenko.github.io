@@ -5,7 +5,10 @@
   <meta charset="utf-8" />
   <title>Certificates | Alex Hiriavenko</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Professional certificates and completed courses by Alex Hiriavenko." />
+  <meta name="description" content="Professional certificates and completed courses by Alex Hiriavenko: Node.js, JavaScript, SQL, English, EPAM, DAN.IT, RS School." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Alex Hiriavenko" />
+  <meta name="theme-color" content="#0f172a" />
   <link rel="canonical" href="https://alexhiriavenko.github.io/certificates/" />
   
   <link rel="alternate" hreflang="en" href="https://alexhiriavenko.github.io/certificates/" />
@@ -15,7 +18,27 @@
   <link rel="alternate" hreflang="uk" href="https://alexhiriavenko.github.io/uk/certificates/" />
   
   <link rel="alternate" hreflang="x-default" href="https://alexhiriavenko.github.io/certificates/" />
-  <!-- JSON-LD: Person -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Certificates | Alex Hiriavenko" />
+  <meta property="og:description" content="Professional certificates and completed courses by Alex Hiriavenko: Node.js, JavaScript, SQL, English, EPAM, DAN.IT, RS School." />
+  <meta property="og:url" content="https://alexhiriavenko.github.io/certificates/" />
+  <meta property="og:site_name" content="Alex Hiriavenko CV" />
+  <meta property="og:image" content="https://alexhiriavenko.github.io/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Alex Hiriavenko — Fullstack Developer CV" />
+  <meta property="og:locale" content="en_US" />
+  
+  <meta property="og:locale:alternate" content="ru_RU" />
+  
+  <meta property="og:locale:alternate" content="uk_UA" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Certificates | Alex Hiriavenko" />
+  <meta name="twitter:description" content="Professional certificates and completed courses by Alex Hiriavenko: Node.js, JavaScript, SQL, English, EPAM, DAN.IT, RS School." />
+  <meta name="twitter:image" content="https://alexhiriavenko.github.io/img/og-image.png" />
+  <meta name="twitter:image:alt" content="Alex Hiriavenko — Fullstack Developer CV" />
+  <!-- JSON-LD graph: WebSite, ProfilePage, Person -->
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
@@ -33,9 +56,12 @@
         "Alex Giryavenko",
         "Alexey Giryavenko",
         "Oleksii Giryavenko",
-        "Oleksiy Giryavenko"
+        "Oleksiy Giryavenko",
+        "Алексей Гирявенко",
+        "Олексій Гірявенко",
+        "Алексій Гірявенко"
       ],
-      "description": "Fullstack Developer specializing in Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM systems, API development, and performance optimization.",
+      "description": "Fullstack Developer specializing in Vue 3, Node.js, NestJS, Laravel, TypeScript, PHP, PostgreSQL, MySQL, CRM systems, API development, and performance optimization.",
       "jobTitle": "Fullstack Developer",
       "hasOccupation": {
         "@type": "Occupation",
@@ -95,14 +121,17 @@
         "@type": "Organization",
         "name": "Palmo"
       },
-      "image": "https://alexhiriavenko.github.io/img/user-photo.jpg",
+      "image": "https://alexhiriavenko.github.io/img/profile-photo.png",
       "email": "mailto:martmarchmartmarch@gmail.com",
       "telephone": "+380504716006",
       "url": "https://alexhiriavenko.github.io/",
-      "mainEntityOfPage": "https://alexhiriavenko.github.io/",
+      "mainEntityOfPage": {
+        "@id": "https://alexhiriavenko.github.io/#profile-page"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/alex-hiriavenko/",
         "https://github.com/AlexHiriavenko",
+        "https://gitlab.com/ma_rch",
         "https://t.me/AlexHiriavenko",
         "https://www.facebook.com/alexey.giryavenko"
       ]
@@ -124,8 +153,9 @@
     {
       "@type": "ProfilePage",
       "@id": "https://alexhiriavenko.github.io/#profile-page",
-      "name": "Alex Hiriavenko CV",
+      "name": "Alex Hiriavenko — Fullstack Developer CV",
       "url": "https://alexhiriavenko.github.io/",
+      "inLanguage": "en",
       "isPartOf": {
         "@id": "https://alexhiriavenko.github.io/#website"
       },
@@ -171,8 +201,7 @@
 <!-- PWA manifest -->
 <link rel="manifest" href="../manifest.webmanifest" />
 
-<!-- Browser theme colors -->
-<meta name="theme-color" content="#0f172a" />
+<!-- Browser tile color -->
 <meta name="msapplication-TileColor" content="#0f172a" />
 
   <link href="../css/styles.min.css" rel="stylesheet" />
@@ -182,8 +211,8 @@
     <header>
   <div class="header__avatar">
     <img
-      src="../img/user-photo.jpg"
-      alt="person photo"
+      src="../img/profile-photo.png"
+      alt="Portrait of Alex Hiriavenko"
       width="54"
       height="54"
       class="avatar__img"
@@ -212,7 +241,8 @@
       </li>
     </ul>
   </nav>
-  <label class="language-select" for="language-select" aria-label="Select language">
+  <label class="language-select" for="language-select">
+    <span hidden>Select language</span>
     <select
       id="language-select"
       name="language"
