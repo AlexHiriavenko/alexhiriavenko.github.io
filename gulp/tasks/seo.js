@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readdir, writeFile } from "node:fs/promises";
 import * as nodePath from "node:path";
 import { locales, defaultLocale } from "../../src/data/locales.js";
 import { routes } from "../../src/data/routes.js";
@@ -78,6 +78,16 @@ Sitemap: ${baseUrl}/sitemap.xml
 `;
 };
 
+const copyGoogleVerificationFiles = async (outputDir) => {
+  const srcDir = app.path.srcFolder;
+  const files = await readdir(srcDir);
+  const verificationFiles = files.filter((file) => /^google.+\.html$/i.test(file));
+
+  await Promise.all(
+    verificationFiles.map((file) => copyFile(nodePath.join(srcDir, file), nodePath.join(outputDir, file))),
+  );
+};
+
 export const seo = async () => {
   const outputDir = app.path.dist.html;
 
@@ -85,5 +95,6 @@ export const seo = async () => {
   await Promise.all([
     writeFile(nodePath.join(outputDir, "sitemap.xml"), getSitemap()),
     writeFile(nodePath.join(outputDir, "robots.txt"), getRobots()),
+    copyGoogleVerificationFiles(outputDir),
   ]);
 };
