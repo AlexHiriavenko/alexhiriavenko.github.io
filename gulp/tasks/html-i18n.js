@@ -60,6 +60,7 @@ const getAlternateLinks = (route) => {
 const getRoutePageData = (route, locale, outputSegments) => {
   const seo = route.seo?.[locale.code] ?? route.seo?.[defaultLocale] ?? {};
   const defaultLocaleConfig = locales.find((item) => item.code === defaultLocale);
+  const localeHomeSegments = toSegments(locale.basePath);
   const defaultSegments = [
     ...toSegments(defaultLocaleConfig?.basePath ?? ""),
     ...toSegments(route.outputPath),
@@ -69,7 +70,9 @@ const getRoutePageData = (route, locale, outputSegments) => {
     id: route.id,
     outputPath: route.outputPath,
     seo,
+    ogType: "website",
     canonicalUrl: getAbsolutePageUrl(outputSegments),
+    profilePageUrl: getAbsolutePageUrl(localeHomeSegments),
     alternateLinks: getAlternateLinks(route),
     xDefaultUrl: getAbsolutePageUrl(defaultSegments),
   };
@@ -127,7 +130,13 @@ export const htmlI18n = async () => {
         page,
         languageLinks: getLanguageLinks(outputSegments, route),
         structuredData: {
-          graph: getJsonLd(site, { breadcrumb }),
+          graph: getJsonLd(site, {
+            breadcrumb,
+            page: {
+              ...page,
+              locale,
+            },
+          }),
         },
         site,
         assetPath: getRelativePath(outputSegments.length),

@@ -7,6 +7,7 @@ export const locales = [
     label: "English",
     shortLabel: "EN",
     basePath: "",
+    ogLocale: "en_US",
   },
   {
     code: "ru",
@@ -14,6 +15,7 @@ export const locales = [
     label: "Русский",
     shortLabel: "RU",
     basePath: "ru",
+    ogLocale: "ru_RU",
   },
   {
     code: "uk",
@@ -21,5 +23,6 @@ export const locales = [
     label: "Українська",
     shortLabel: "UK",
     basePath: "uk",
+    ogLocale: "uk_UA",
   },
 ];

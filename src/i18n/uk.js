@@ -18,6 +18,9 @@ export const uk = {
   breadcrumbs: {
     home: "Головна",
   },
+  main: {
+    name: "Олексій Гірявенко",
+  },
   contacts: {
     title: "Контакти",
     linkedInProfileLabel: "Профіль LinkedIn",

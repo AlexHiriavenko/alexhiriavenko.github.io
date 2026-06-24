@@ -18,6 +18,9 @@ export const en = {
   breadcrumbs: {
     home: "Home",
   },
+  main: {
+    name: "Alex Hiriavenko",
+  },
   contacts: {
     title: "Contacts",
     linkedInProfileLabel: "LinkedIn profile",

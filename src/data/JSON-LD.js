@@ -1,4 +1,4 @@
-const getPerson = (site) => ({
+const getPerson = (site, page) => ({
   "@type": "Person",
   "@id": `${site.url}/#person`,
   name: "Alex Hiriavenko",
@@ -12,9 +12,12 @@ const getPerson = (site) => ({
     "Alexey Giryavenko",
     "Oleksii Giryavenko",
     "Oleksiy Giryavenko",
+    "Алексей Гирявенко",
+    "Олексій Гірявенко",
+    "Алексій Гірявенко",
   ],
   description:
-    "Fullstack Developer specializing in Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM systems, API development, and performance optimization.",
+    "Fullstack Developer specializing in Vue 3, Node.js, NestJS, Laravel, TypeScript, PHP, PostgreSQL, MySQL, CRM systems, API development, and performance optimization.",
   jobTitle: "Fullstack Developer",
   hasOccupation: {
     "@type": "Occupation",
@@ -74,7 +77,9 @@ const getPerson = (site) => ({
   email: "mailto:martmarchmartmarch@gmail.com",
   telephone: "+380504716006",
   url: `${site.url}/`,
-  mainEntityOfPage: `${site.url}/`,
+  mainEntityOfPage: {
+    "@id": `${page.profilePageUrl}#profile-page`,
+  },
   sameAs: [
     "https://www.linkedin.com/in/alex-hiriavenko/",
     "https://github.com/AlexHiriavenko",
@@ -94,11 +99,12 @@ const getWebSite = (site) => ({
   },
 });
 
-const getProfilePage = (site) => ({
+const getProfilePage = (site, page) => ({
   "@type": "ProfilePage",
-  "@id": `${site.url}/#profile-page`,
-  name: "Alex Hiriavenko CV",
-  url: `${site.url}/`,
+  "@id": `${page.profilePageUrl}#profile-page`,
+  name: site.profilePageName,
+  url: page.profilePageUrl,
+  inLanguage: page.locale.htmlLang,
   isPartOf: {
     "@id": `${site.url}/#website`,
   },
@@ -121,7 +127,7 @@ const getBreadcrumbList = (breadcrumb) => ({
 });
 
 export const getJsonLd = (site, options = {}) => {
-  const graph = [getPerson(site), getWebSite(site), getProfilePage(site)];
+  const graph = [getPerson(site, options.page), getWebSite(site), getProfilePage(site, options.page)];
 
   if (options.breadcrumb) {
     graph.push(getBreadcrumbList(options.breadcrumb));
