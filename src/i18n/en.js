@@ -101,7 +101,7 @@ export const en = {
   summary: {
     title: "Summary",
     paragraphs: [
-      "Full-Stack Developer (Vue.js, NodeJS, NestJS, TypeORM, PostgreSQL) with hands-on experience building and maintaining high-load CRM systems (≈3K users, healthcare domain).",
+      "Full-Stack Developer (Vue.js, NodeJS, NestJS, Laravel, TypeORM, PostgreSQL) with hands-on experience building and maintaining high-load CRM systems (≈3K users, healthcare domain).",
       "Strong background in designing scalable APIs, database optimization, and real-time features. Passionate about performance, clean architecture, and delivering reliable solutions that improve user experience and business efficiency.",
       "Graduate of the IT Generation program by the Ministry of Digital Transformation of Ukraine.",
     ],

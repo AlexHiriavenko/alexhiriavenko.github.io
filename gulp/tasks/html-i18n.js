@@ -4,6 +4,7 @@ import * as nodePath from "node:path";
 import { locales, defaultLocale } from "../../src/data/locales.js";
 import { routes } from "../../src/data/routes.js";
 import { site } from "../../src/data/site.js";
+import { getPersonJsonLd } from "../../src/data/JSON-LD.js";
 import { translations } from "../../src/i18n/index.js";
 
 const toSegments = (value) => value.split("/").filter(Boolean);
@@ -85,6 +86,8 @@ export const htmlI18n = async () => {
     noCache: app.isDev,
   });
 
+  env.addFilter("json", (value) => JSON.stringify(value, null, 2));
+
   for (const locale of locales) {
     for (const route of routes) {
       const outputSegments = [...toSegments(locale.basePath), ...toSegments(route.outputPath)];
@@ -100,6 +103,9 @@ export const htmlI18n = async () => {
         t: getTranslations(locale),
         page: getRoutePageData(route, locale, outputSegments),
         languageLinks: getLanguageLinks(outputSegments, route),
+        structuredData: {
+          person: getPersonJsonLd(site),
+        },
         site,
         assetPath: getRelativePath(outputSegments.length),
         localePath: getRelativePath(routeDepth),
