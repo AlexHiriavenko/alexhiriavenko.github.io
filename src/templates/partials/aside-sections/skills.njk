@@ -1,12 +1,12 @@
 ﻿<section class="skills" id="skills" aria-labelledby="skills-title">
   <h3 id="edu-title" class="section-title">
-    <span>Skills</span>
-    <img src="{{ assetPath }}img/icons/Ninja.svg" alt="book" width="16" />
+    <span>{{ t.skills.title }}</span>
+    <img src="{{ assetPath }}img/icons/Ninja.svg" alt="{{ t.skills.iconAlt }}" width="16" />
   </h3>
 
   <!-- Languages -->
   <div class="skills__group" role="group" aria-labelledby="skills-languages-title">
-    <h4 id="skills-languages-title" class="skills__group-title">Languages</h4>
+    <h4 id="skills-languages-title" class="skills__group-title">{{ t.skills.groups.languages }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -21,7 +21,7 @@
 
   <!-- Frontend -->
   <div class="skills__group" role="group" aria-labelledby="skills-frontend-title">
-    <h4 id="skills-frontend-title" class="skills__group-title">Frontend</h4>
+    <h4 id="skills-frontend-title" class="skills__group-title">{{ t.skills.groups.frontend }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -48,7 +48,7 @@
 
   <!-- Backend -->
   <div class="skills__group" role="group" aria-labelledby="skills-backend-title">
-    <h4 id="skills-backend-title" class="skills__group-title">Backend</h4>
+    <h4 id="skills-backend-title" class="skills__group-title">{{ t.skills.groups.backend }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -74,7 +74,7 @@
 
   <!-- Databases & ORM -->
   <div class="skills__group" role="group" aria-labelledby="skills-db-title">
-    <h4 id="skills-db-title" class="skills__group-title">Databases &amp; ORM</h4>
+    <h4 id="skills-db-title" class="skills__group-title">{{ t.skills.groups.databases }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -106,7 +106,7 @@
   <!-- State Management & Data Fetching -->
   <div class="skills__group" role="group" aria-labelledby="skills-state-title">
     <h4 id="skills-state-title" class="skills__group-title">
-      State Management &amp; Data Fetching
+      {{ t.skills.groups.state }}
     </h4>
     <ul class="skills__list">
       <li class="skills__item">
@@ -127,7 +127,7 @@
 
   <!-- Messaging & Real-time -->
   <div class="skills__group" role="group" aria-labelledby="skills-messaging-title">
-    <h4 id="skills-messaging-title" class="skills__group-title">Messaging &amp; Real-time</h4>
+    <h4 id="skills-messaging-title" class="skills__group-title">{{ t.skills.groups.messaging }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span>RabbitMQ</span>
@@ -142,7 +142,7 @@
 
   <!-- DevOps & Cloud -->
   <div class="skills__group" role="group" aria-labelledby="skills-devops-title">
-    <h4 id="skills-devops-title" class="skills__group-title">DevOps &amp; Cloud</h4>
+    <h4 id="skills-devops-title" class="skills__group-title">{{ t.skills.groups.devops }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span>Docker</span>
@@ -165,7 +165,7 @@
 
   <!-- Monitoring & Observability -->
   <div class="skills__group" role="group" aria-labelledby="skills-monitoring-title">
-    <h4 id="skills-monitoring-title" class="skills__group-title">Monitoring &amp; Observability</h4>
+    <h4 id="skills-monitoring-title" class="skills__group-title">{{ t.skills.groups.monitoring }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span>Lens</span>
@@ -181,7 +181,7 @@
 
   <!-- AI-assisted Development -->
   <div class="skills__group" role="group" aria-labelledby="skills-ai-title">
-    <h4 id="skills-ai-title" class="skills__group-title">AI-assisted Development</h4>
+    <h4 id="skills-ai-title" class="skills__group-title">{{ t.skills.groups.ai }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
@@ -190,22 +190,22 @@
       </li>
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >IDE-integrated AI coding agents</span
+          >{{ t.skills.aiItems.ideAgents }}</span
         >
       </li>
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >AGENTS.md workflows</span
+          >{{ t.skills.aiItems.agentsWorkflows }}</span
         >
       </li>
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Code analysis, refactoring, bug fixing</span
+          >{{ t.skills.aiItems.codeAnalysis }}</span
         >
       </li>
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Test generation, AI change review</span
+          >{{ t.skills.aiItems.testGeneration }}</span
         >
       </li>
     </ul>
@@ -213,11 +213,11 @@
 
   <!-- Architecture & Practices -->
   <div class="skills__group" role="group" aria-labelledby="skills-architecture-title">
-    <h4 id="skills-architecture-title" class="skills__group-title">Architecture &amp; Practices</h4>
+    <h4 id="skills-architecture-title" class="skills__group-title">{{ t.skills.groups.architecture }}</h4>
     <ul class="skills__list">
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Clean Architecture</span
+          >{{ t.skills.architectureItems.cleanArchitecture }}</span
         >
       </li>
       <li class="skills__item">
@@ -225,7 +225,7 @@
       </li>
       <li class="skills__item">
         <img src="{{ assetPath }}img/icons/code.svg" alt="" width="15" aria-hidden="true" /><span
-          >Performance &amp; Profiling</span
+          >{{ t.skills.architectureItems.performance }}</span
         >
       </li>
     </ul>

@@ -1,6 +1,6 @@
 ﻿<section class="contacts" aria-labelledby="contacts-title">
   <h3 id="contacts-title" class="section-title">
-    <span>Contacts</span>
+    <span>{{ t.contacts.title }}</span>
     <span class="mobile-emoji">🖁</span>
   </h3>
 
@@ -30,7 +30,7 @@
           class="contacts__link"
           target="_blank"
           rel="noopener"
-          aria-label="LinkedIn profile"
+          aria-label="{{ t.contacts.linkedInProfileLabel }}"
         >
           <img src="{{ assetPath }}img/icons/linkedin.svg" alt="" width="20" aria-hidden="true" />
           <span>LinkedIn</span>
@@ -42,7 +42,7 @@
           class="contacts__link"
           target="_blank"
           rel="noopener"
-          aria-label="Telegram"
+          aria-label="{{ t.contacts.telegramProfileLabel }}"
         >
           <img src="{{ assetPath }}img/icons/telegram.svg" alt="" width="20" aria-hidden="true" />
           <span>Telegram</span>
@@ -54,7 +54,7 @@
           class="contacts__link"
           target="_blank"
           rel="noopener me"
-          aria-label="GitHub profile"
+          aria-label="{{ t.contacts.githubProfileLabel }}"
         >
           <img src="{{ assetPath }}img/icons/github.svg" alt="" width="20" aria-hidden="true" />
           <span>Github</span>
