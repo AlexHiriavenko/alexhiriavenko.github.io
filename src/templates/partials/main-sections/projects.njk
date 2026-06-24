@@ -1,175 +1,37 @@
-﻿<section class="projects" aria-labelledby="projects-title">
-  <h3 id="projects-title" class="section-title">Educational &amp; Pet Projects</h3>
-  <p class="section-item-text projects__note">
-    Non-commercial projects built during training and personal practice.
-  </p>
+<section class="projects" aria-labelledby="projects-title">
+  <h3 id="projects-title" class="section-title">{{ t.projects.title }}</h3>
+  <p class="section-item-text projects__note">{{ t.projects.note }}</p>
 
   <ul>
-    <li>
-      <article aria-labelledby="proj-medical-title">
-        <h4 id="proj-medical-title" class="projects__item-title">- Star Wars:</h4>
-
-        <div class="projects__item-description">
-          <div class="projects__item-description-wrapper">
-            <p class="projects__item-description-text">Star Wars characters (React).</p>
-            <p class="projects__item-description-text">RTK Query and Routing</p>
-
-            <div>
-              <a
-                class="projects__item-link"
-                href="https://react-starwars.netlify.app/"
-                target="_blank"
-                rel="noopener"
-                >website link</a
-              >
-              /
-              <a
-                class="projects__item-link"
-                href="https://github.com/AlexHiriavenko/React_StarWars/tree/api-queries"
-                target="_blank"
-                rel="noopener"
-                >repository link</a
-              >
-            </div>
-          </div>
-
-          <figure class="projects__img-wrapper">
-            <a
-              class="projects__item-link projects__item-link--hover"
-              href="https://react-starwars.netlify.app/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="{{ assetPath }}img/projects/star_wars.jpg"
-                alt="Medical Portal вЂ” app preview"
-                width="100"
-                loading="lazy"
-              />
-            </a>
-          </figure>
-        </div>
-      </article>
-    </li>
-
-    <li>
-      <article aria-labelledby="proj-forcio-title">
-        <h4 id="proj-forcio-title" class="projects__item-title">- Nonograms Game:</h4>
-
-        <div class="projects__item-description">
-          <div class="projects__item-description-wrapper">
-            <p class="projects__item-description-text">
-              Logic puzzle: Japanese crossword. (JavaScript)
-            </p>
-
-            <div>
-              <a
-                class="projects__item-link"
-                href="https://alexhiriavenko.github.io/Palmo-Edu/nonograms/"
-                target="_blank"
-                rel="noopener"
-                >website link</a
-              >
-              /
-              <a
-                class="projects__item-link"
-                href="https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Nonograms-App"
-                target="_blank"
-                rel="noopener"
-                >repository link</a
-              >
-            </div>
-          </div>
-
-          <figure class="projects__img-wrapper">
-            <a
-              class="projects__item-link projects__item-link--hover"
-              href="https://alexhiriavenko.github.io/Palmo-Edu/nonograms/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="{{ assetPath }}img/projects/nonograms.jpg"
-                alt="Nonograms Game preview"
-                width="100"
-                loading="lazy"
-              />
-            </a>
-          </figure>
-        </div>
-      </article>
-    </li>
-
-    <li>
-      <article aria-labelledby="proj-ham-title">
-        <h4 id="proj-ham-title" class="projects__item-title">- Sports Events App:</h4>
-
-        <div class="projects__item-description">
-          <div class="projects__item-description-wrapper">
-            <p class="projects__item-description-text">
-              Sporting events booking service (Vue, Firebase).
-            </p>
-
-            <div>
-              <a
-                class="projects__item-link"
-                href="https://alexhiriavenko.github.io/Palmo-Edu/Sports-Events/"
-                target="_blank"
-                rel="noopener"
-                >website link</a
-              >
-              /
-              <a
-                class="projects__item-link"
-                href="https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Vue/Sports-Events-App"
-                target="_blank"
-                rel="noopener"
-                >repository link</a
-              >
-            </div>
-          </div>
-
-          <figure class="projects__img-wrapper">
-            <a
-              class="projects__item-link projects__item-link--hover"
-              href="https://alexhiriavenko.github.io/Palmo-Edu/Sports-Events/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="{{ assetPath }}img/projects/sports-events.jpg"
-                alt="Sports-Events preview"
-                width="100"
-                loading="lazy"
-              />
-            </a>
-          </figure>
-        </div>
-      </article>
-    </li>
-
+    {% for project in t.projects.items %}
     <li class="projects__item">
-      <article aria-labelledby="proj-privilege-title">
-        <h4 id="proj-privilege-title" class="projects__item-title">- EDOK:</h4>
+      <article aria-labelledby="proj-{{ project.id }}-title">
+        <h4 id="proj-{{ project.id }}-title" class="projects__item-title">- {{ project.title }}:</h4>
 
         <div class="projects__item-description">
           <div class="projects__item-description-wrapper">
-            <p class="projects__item-description-text">Food Delivery Service (Laravel, Vue).</p>
+            {% for description in project.descriptions %}
+            <p class="projects__item-description-text">{{ description }}</p>
+            {% endfor %}
+            <p class="projects__item-description-text">
+              <strong>{{ t.projects.technologyLabel }}:</strong> {{ project.technologies | join(", ") }}
+            </p>
+
             <div>
               <a
                 class="projects__item-link"
-                href="https://alexhiriavenko.github.io/Restaurant-Vue/"
+                href="{{ project.websiteUrl }}"
                 target="_blank"
                 rel="noopener"
-                >website link</a
+                >{{ t.projects.websiteLink }}</a
               >
               /
               <a
                 class="projects__item-link"
-                href="https://github.com/AlexHiriavenko/Restaurant-Vue"
+                href="{{ project.repositoryUrl }}"
                 target="_blank"
                 rel="noopener"
-                >repository link</a
+                >{{ t.projects.repositoryLink }}</a
               >
             </div>
           </div>
@@ -177,13 +39,13 @@
           <figure class="projects__img-wrapper">
             <a
               class="projects__item-link projects__item-link--hover"
-              href="https://alexhiriavenko.github.io/Restaurant-Vue/"
+              href="{{ project.websiteUrl }}"
               target="_blank"
               rel="noopener"
             >
               <img
-                src="{{ assetPath }}img/projects/edok.jpg"
-                alt="Privilege Handmade вЂ” online store preview"
+                src="{{ assetPath }}img/projects/{{ project.image }}"
+                alt="{{ project.alt }}"
                 width="100"
                 loading="lazy"
               />
@@ -192,5 +54,6 @@
         </div>
       </article>
     </li>
+    {% endfor %}
   </ul>
 </section>

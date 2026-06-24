@@ -1,12 +1,14 @@
-﻿<section class="experience" id="education" aria-labelledby="prev-exp-title">
-  <h3 id="prev-exp-title" class="section-title">Education</h3>
+<section class="experience" id="education" aria-labelledby="education-title">
+  <h3 id="education-title" class="section-title">{{ t.education.title }}</h3>
   <ul class="exp__list">
+    {% for item in t.education.items %}
     <li class="exp__item">
-      <article aria-labelledby="edu-engineer-title">
-        <h4 id="edu-engineer-title" class="edu__title-item">Processing Equipment Engineer</h4>
-        <p class="edu__text mt-10">Donetsk National University of Economics and Trade</p>
-        <p class="edu__text">Specialist Degree</p>
+      <article aria-labelledby="edu-{{ item.id }}-title">
+        <h4 id="edu-{{ item.id }}-title" class="edu__title-item">{{ item.title }}</h4>
+        <p class="edu__text mt-10">{{ item.institution }}</p>
+        <p class="edu__text">{{ item.degree }}</p>
       </article>
     </li>
+    {% endfor %}
   </ul>
 </section>

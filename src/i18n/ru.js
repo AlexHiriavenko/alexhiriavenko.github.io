@@ -64,4 +64,133 @@ export const ru = {
     title: "Сертификаты",
     linkText: "смотреть сертификаты",
   },
+  summary: {
+    title: "Обо мне",
+    paragraphs: [
+      "Full-Stack Developer (Vue.js, NodeJS, NestJS, TypeORM, PostgreSQL) с практическим опытом разработки и поддержки высоконагруженных CRM-систем (≈3K пользователей, healthcare domain).",
+      "Имею сильный опыт в проектировании масштабируемых API, оптимизации баз данных и разработке real-time функциональности. Фокусируюсь на производительности, чистой архитектуре и надежных решениях, которые улучшают пользовательский опыт и эффективность бизнеса.",
+      "Выпускник программы IT Generation от Министерства цифровой трансформации Украины.",
+    ],
+  },
+  achievements: {
+    title: "Достижения",
+    items: [
+      "Улучшил скорость загрузки страниц на <strong>30-80%</strong> во frontend и backend сценариях за счет уменьшения лишних данных в payload, удаления избыточных серверных запросов и оптимизации PostgreSQL-запросов.",
+      "Реализовал backend proxy для доставки файлов из S3 - повысил безопасность (без прямых публичных ссылок) и упростил интеграцию на frontend.",
+      "Разработал переиспользуемый <strong>модуль шаблонов задач</strong> для CRM - сотрудники создают новые задачи быстрее и с меньшим количеством ошибок, что повышает эффективность рабочих процессов.",
+      "Создал переиспользуемые <strong>Vue composables</strong> и базовые UI-компоненты, включая flow загрузки скриншотов, который используется в 3 модулях (новости, комментарии, задачи) - снизил дублирование кода и ускорил разработку функциональности.",
+      "Разрабатывал модули высоконагруженной healthcare CRM (≈3K пользователей), обеспечивая стабильность и производительность под пиковой нагрузкой.",
+      "Получил <strong>грант IT Generation</strong>.",
+    ],
+  },
+  experience: {
+    title: "Опыт",
+    items: [
+      {
+        id: "palmo",
+        position: "Fullstack Developer",
+        company: "Palmo",
+        period: "2024 - настоящее время",
+        datetime: "2024",
+        details: [
+          "Разрабатывал и поддерживал цифровую платформу ON Clinic для взаимодействия с пациентами: публичный медицинский сайт, кабинет пациента, CRM-модули, Telegram-бота, а также сценарии онлайн-записи и оплаты для сети медицинских центров.",
+          "Оптимизировал PostgreSQL-запросы и производительность API с помощью кеширования и индексации.",
+          "Улучшал frontend-интерфейсы и внедрял переиспользуемые hooks/components для ускорения разработки.",
+          "Работал в agile-командах с аналитиками, разработчиками, QA и DevOps, участвуя в проектировании решений.",
+        ],
+      },
+      {
+        id: "internship",
+        position: "Front End Developer Internship",
+        company: "DAN.IT",
+        period: "2023",
+        datetime: "2023",
+        details: [
+          "Получил практический опыт работы в командах из 3-9 человек над full-cycle проектами.",
+          "В одном из проектов выполнял роль team lead: координировал распределение задач и помогал участникам команды.",
+          "Разработал проект социальной сети с использованием React, Redux, MUI.",
+        ],
+      },
+    ],
+  },
+  additionalExperience: {
+    title: "Дополнительный опыт",
+    items: [
+      {
+        id: "logika",
+        title: "Преподаватель веб-разработки (Logika School)",
+        text: "Обучал школьников веб-разработке и основам frontend, объясняя HTML, CSS, базовый JavaScript и практическую структуру проектов доступным языком.",
+      },
+      {
+        id: "vhh",
+        title: "Менеджер по закупкам (VHH Group)",
+        text: "Обеспечивал бесперебойные поставки оборудования, комплектующих и материалов. Проводил анализ рынка, вел переговоры и заключал договоры, контролировал качество товаров и услуг.",
+      },
+      {
+        id: "effect",
+        title: 'Категорийный менеджер по закупкам (ООО "Эффект")',
+        text: "Управлял закупками в закрепленной категории, вел переговоры с поставщиками и улучшал оборачиваемость товарных запасов. Проводил прогнозирование спроса и анализ рыночных тенденций для увеличения продаж и оборота.",
+      },
+    ],
+  },
+  education: {
+    title: "Образование",
+    items: [
+      {
+        id: "engineer",
+        title: "Высшее образование: инженер технологического оборудования",
+        institution: "Донецкий национальный университет экономики и торговли",
+        degree: "Диплом специалиста",
+      },
+    ],
+  },
+  projects: {
+    title: "Учебные и pet-проекты",
+    note: "Некоммерческие проекты, созданные во время обучения и личной практики.",
+    websiteLink: "сайт",
+    repositoryLink: "репозиторий",
+    technologyLabel: "Основные технологии",
+    items: [
+      {
+        id: "star-wars",
+        title: "Star Wars",
+        descriptions: ["Персонажи Star Wars."],
+        technologies: ["React", "RTK Query", "Routing"],
+        websiteUrl: "https://react-starwars.netlify.app/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/React_StarWars/tree/api-queries",
+        image: "star_wars.jpg",
+        alt: "Превью приложения Star Wars",
+      },
+      {
+        id: "nonograms",
+        title: "Nonograms Game",
+        descriptions: ["Логическая игра: японский кроссворд."],
+        technologies: ["JavaScript"],
+        websiteUrl: "https://alexhiriavenko.github.io/Palmo-Edu/nonograms/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Nonograms-App",
+        image: "nonograms.jpg",
+        alt: "Превью игры Nonograms",
+      },
+      {
+        id: "sports-events",
+        title: "Sports Events App",
+        descriptions: ["Сервис бронирования спортивных событий."],
+        technologies: ["Vue", "Firebase"],
+        websiteUrl: "https://alexhiriavenko.github.io/Palmo-Edu/Sports-Events/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Vue/Sports-Events-App",
+        image: "sports-events.jpg",
+        alt: "Превью Sports Events App",
+      },
+      {
+        id: "edok",
+        title: "EDOK",
+        descriptions: ["Сервис доставки еды."],
+        technologies: ["Laravel", "Vue"],
+        websiteUrl: "https://alexhiriavenko.github.io/Restaurant-Vue/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/Restaurant-Vue",
+        image: "edok.jpg",
+        alt: "Превью сервиса доставки еды EDOK",
+      },
+    ],
+  },
 };

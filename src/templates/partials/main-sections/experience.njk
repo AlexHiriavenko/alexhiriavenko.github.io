@@ -1,48 +1,21 @@
-﻿<section class="experience" id="exp" aria-labelledby="experience-title">
-  <h3 id="experience-title" class="section-title">Experience</h3>
+<section class="experience" id="exp" aria-labelledby="experience-title">
+  <h3 id="experience-title" class="section-title">{{ t.experience.title }}</h3>
 
   <ul class="exp__list">
-    <!-- Palmo -->
+    {% for item in t.experience.items %}
     <li class="exp__item">
-      <article aria-labelledby="exp-palmo-title">
-        <h4 id="exp-palmo-title" class="exp__title-item">Fullstack Developer</h4>
-        <h5 class="exp__subtitle">Palmo (<time datetime="2024">2024 – Present</time>)</h5>
+      <article aria-labelledby="exp-{{ item.id }}-title">
+        <h4 id="exp-{{ item.id }}-title" class="exp__title-item">{{ item.position }}</h4>
+        <h5 class="exp__subtitle">
+          {{ item.company }} (<time datetime="{{ item.datetime }}">{{ item.period }}</time>)
+        </h5>
         <ul class="experience__details">
-          <li class="section-item-text">
-            Developed healthcare CRM modules, patient portal (personal cabinet), and Telegram bot,
-            improving workflows and overall system stability.
-          </li>
-          <li class="section-item-text">
-            Optimized PostgreSQL queries and API performance with caching and indexing.
-          </li>
-          <li class="section-item-text">
-            Enhanced front-end interfaces and introduced reusable hooks/components to accelerate
-            delivery.
-          </li>
-          <li class="section-item-text">
-            Collaborated in agile teams with analysts, developers, QA, and DevOps, contributing to
-            design.
-          </li>
+          {% for detail in item.details %}
+          <li class="section-item-text">{{ detail }}</li>
+          {% endfor %}
         </ul>
       </article>
     </li>
-
-    <!-- DAN.IT Internship -->
-    <li class="exp__item">
-      <article aria-labelledby="exp-internship-title">
-        <h4 id="exp-internship-title" class="exp__title-item">Front End Developer Internship</h4>
-        <h5 class="exp__subtitle">DAN.IT (<time datetime="2023">2023</time>)</h5>
-        <ul class="experience__details">
-          <li class="section-item-text">
-            Gained hands-on experience working in teams of 3вЂ“9 people on full-cycle projects.
-          </li>
-          <li class="section-item-text">
-            Took the role of team lead in one project, coordinating task distribution and mentoring
-            peers.
-          </li>
-          <li class="section-item-text">Built a social network project using React, Redux, MUI</li>
-        </ul>
-      </article>
-    </li>
+    {% endfor %}
   </ul>
 </section>
