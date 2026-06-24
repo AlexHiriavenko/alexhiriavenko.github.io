@@ -3,13 +3,13 @@
 
   <ul class="exp__list">
     <li class="exp__item">
-      <article aria-labelledby="achievements-title">
+      <div>
         <ul class="achievements__list">
           {% for item in t.achievements.items %}
           <li class="achievements__item">{{ item | safe }}</li>
           {% endfor %}
         </ul>
-      </article>
+      </div>
     </li>
   </ul>
 </section>

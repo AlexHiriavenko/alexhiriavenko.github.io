@@ -1,6 +1,6 @@
 export const en = {
   header: {
-    avatarAlt: "person photo",
+    avatarAlt: "Portrait of Alex Hiriavenko",
     nav: {
       summary: "Summary",
       achievements: "Achievements",
