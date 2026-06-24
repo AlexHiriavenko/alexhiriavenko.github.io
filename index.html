@@ -19,90 +19,120 @@
   <script type="application/ld+json">
     {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://alexhiriavenko.github.io/#person",
-  "name": "Alex Hiriavenko",
-  "givenName": "Alex",
-  "familyName": "Hiriavenko",
-  "alternateName": [
-    "Oleksii Hiriavenko",
-    "Oleksiy Hiriavenko",
-    "Alexey Hiriavenko",
-    "Alex Giryavenko",
-    "Alexey Giryavenko",
-    "Oleksii Giryavenko",
-    "Oleksiy Giryavenko"
-  ],
-  "description": "Fullstack Developer specializing in Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM systems, API development, and performance optimization.",
-  "jobTitle": "Fullstack Developer",
-  "hasOccupation": {
-    "@type": "Occupation",
-    "name": "Fullstack Developer",
-    "occupationalCategory": "Software Developer",
-    "skills": [
-      "Fullstack Development",
-      "Frontend Development",
-      "Backend Development",
-      "Laravel Development",
-      "API Development",
-      "Database Optimization",
-      "Performance Optimization",
-      "CRM Systems"
-    ]
-  },
-  "skills": [
-    "JavaScript",
-    "TypeScript",
-    "Vue.js",
-    "Node.js",
-    "NestJS",
-    "Laravel",
-    "PostgreSQL",
-    "TypeORM",
-    "REST API Development",
-    "CRM Systems",
-    "Performance Optimization",
-    "Database Optimization",
-    "Clean Architecture",
-    "Docker",
-    "AWS S3"
-  ],
-  "knowsAbout": [
-    "Fullstack Development",
-    "Frontend Development",
-    "Backend Development",
-    "Laravel Development",
-    "Healthcare CRM",
-    "Patient-facing digital platforms",
-    "API Design",
-    "Database Query Optimization",
-    "Real-time Features",
-    "Reusable UI Components",
-    "AI-assisted Development"
-  ],
-  "knowsLanguage": [
-    "uk",
-    "en",
-    "ru"
-  ],
-  "alumniOf": {
-    "@type": "EducationalOrganization",
-    "name": "Donetsk National University of Economics and Trade"
-  },
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Palmo"
-  },
-  "image": "https://alexhiriavenko.github.io/img/user-photo.jpg",
-  "email": "mailto:martmarchmartmarch@gmail.com",
-  "telephone": "+380504716006",
-  "url": "https://alexhiriavenko.github.io/",
-  "mainEntityOfPage": "https://alexhiriavenko.github.io/",
-  "sameAs": [
-    "https://www.linkedin.com/in/alex-hiriavenko/",
-    "https://github.com/AlexHiriavenko",
-    "https://t.me/AlexHiriavenko",
-    "https://www.facebook.com/alexey.giryavenko"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://alexhiriavenko.github.io/#person",
+      "name": "Alex Hiriavenko",
+      "givenName": "Alex",
+      "familyName": "Hiriavenko",
+      "alternateName": [
+        "Oleksii Hiriavenko",
+        "Oleksiy Hiriavenko",
+        "Alexey Hiriavenko",
+        "Alex Giryavenko",
+        "Alexey Giryavenko",
+        "Oleksii Giryavenko",
+        "Oleksiy Giryavenko"
+      ],
+      "description": "Fullstack Developer specializing in Vue.js, Node.js, NestJS, Laravel, PostgreSQL, CRM systems, API development, and performance optimization.",
+      "jobTitle": "Fullstack Developer",
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Fullstack Developer",
+        "occupationalCategory": "Software Developer",
+        "skills": [
+          "Fullstack Development",
+          "Frontend Development",
+          "Backend Development",
+          "Laravel Development",
+          "API Development",
+          "Database Optimization",
+          "Performance Optimization",
+          "CRM Systems"
+        ]
+      },
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Vue.js",
+        "Node.js",
+        "NestJS",
+        "Laravel",
+        "PostgreSQL",
+        "TypeORM",
+        "REST API Development",
+        "CRM Systems",
+        "Performance Optimization",
+        "Database Optimization",
+        "Clean Architecture",
+        "Docker",
+        "AWS S3"
+      ],
+      "knowsAbout": [
+        "Fullstack Development",
+        "Frontend Development",
+        "Backend Development",
+        "Laravel Development",
+        "Healthcare CRM",
+        "Patient-facing digital platforms",
+        "API Design",
+        "Database Query Optimization",
+        "Real-time Features",
+        "Reusable UI Components",
+        "AI-assisted Development"
+      ],
+      "knowsLanguage": [
+        "uk",
+        "en",
+        "ru"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Donetsk National University of Economics and Trade"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Palmo"
+      },
+      "image": "https://alexhiriavenko.github.io/img/user-photo.jpg",
+      "email": "mailto:martmarchmartmarch@gmail.com",
+      "telephone": "+380504716006",
+      "url": "https://alexhiriavenko.github.io/",
+      "mainEntityOfPage": "https://alexhiriavenko.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/alex-hiriavenko/",
+        "https://github.com/AlexHiriavenko",
+        "https://t.me/AlexHiriavenko",
+        "https://www.facebook.com/alexey.giryavenko"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alexhiriavenko.github.io/#website",
+      "name": "Alex Hiriavenko CV",
+      "url": "https://alexhiriavenko.github.io/",
+      "inLanguage": [
+        "en",
+        "ru",
+        "uk"
+      ],
+      "publisher": {
+        "@id": "https://alexhiriavenko.github.io/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://alexhiriavenko.github.io/#profile-page",
+      "name": "Alex Hiriavenko CV",
+      "url": "https://alexhiriavenko.github.io/",
+      "isPartOf": {
+        "@id": "https://alexhiriavenko.github.io/#website"
+      },
+      "mainEntity": {
+        "@id": "https://alexhiriavenko.github.io/#person"
+      }
+    }
   ]
 }
   </script>
