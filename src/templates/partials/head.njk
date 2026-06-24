@@ -10,7 +10,7 @@
   <link rel="alternate" hreflang="x-default" href="{{ page.xDefaultUrl }}" />
   <!-- JSON-LD: Person -->
   <script type="application/ld+json">
-    {{ structuredData.person | json | safe }}
+    {{ structuredData.graph | json | safe }}
   </script>
   {% include "partials/favicon.njk" %}
   <link href="{{ assetPath }}css/styles.min.css" rel="stylesheet" />

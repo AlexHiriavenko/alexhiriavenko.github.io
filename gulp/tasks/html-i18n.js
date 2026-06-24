@@ -4,7 +4,7 @@ import * as nodePath from "node:path";
 import { locales, defaultLocale } from "../../src/data/locales.js";
 import { routes } from "../../src/data/routes.js";
 import { site } from "../../src/data/site.js";
-import { getPersonJsonLd } from "../../src/data/JSON-LD.js";
+import { getJsonLd } from "../../src/data/JSON-LD.js";
 import { translations } from "../../src/i18n/index.js";
 
 const toSegments = (value) => value.split("/").filter(Boolean);
@@ -79,6 +79,26 @@ const getTranslations = (locale) => {
   return translations[locale.code] ?? translations[defaultLocale];
 };
 
+const getBreadcrumb = (route, locale, outputSegments, t) => {
+  if (!route.outputPath) return null;
+
+  const homeSegments = toSegments(locale.basePath);
+
+  return {
+    currentUrl: getAbsolutePageUrl(outputSegments),
+    items: [
+      {
+        name: t.breadcrumbs.home,
+        url: getAbsolutePageUrl(homeSegments),
+      },
+      {
+        name: route.id === "certificates" ? t.header.nav.certificates : route.seo?.[locale.code]?.title,
+        url: getAbsolutePageUrl(outputSegments),
+      },
+    ],
+  };
+};
+
 export const htmlI18n = async () => {
   const templatesDir = nodePath.join(app.path.srcFolder, "templates");
   const env = nunjucks.configure(templatesDir, {
@@ -94,17 +114,20 @@ export const htmlI18n = async () => {
       const routeDepth = toSegments(route.outputPath).length;
       const outputDir = nodePath.join(app.path.dist.html, ...outputSegments);
       const outputFile = nodePath.join(outputDir, "index.html");
+      const t = getTranslations(locale);
+      const page = getRoutePageData(route, locale, outputSegments);
+      const breadcrumb = getBreadcrumb(route, locale, outputSegments, t);
 
       const html = env.render(`pages/${route.template}`, {
         locale,
         locales,
         route,
         routes,
-        t: getTranslations(locale),
-        page: getRoutePageData(route, locale, outputSegments),
+        t,
+        page,
         languageLinks: getLanguageLinks(outputSegments, route),
         structuredData: {
-          person: getPersonJsonLd(site),
+          graph: getJsonLd(site, { breadcrumb }),
         },
         site,
         assetPath: getRelativePath(outputSegments.length),

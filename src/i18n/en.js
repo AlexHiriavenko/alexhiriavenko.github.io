@@ -15,6 +15,9 @@ export const en = {
     linksLabel: "Footer links and copyright",
     githubProfileLabel: "GitHub — Alex Hiriavenko",
   },
+  breadcrumbs: {
+    home: "Home",
+  },
   contacts: {
     title: "Contacts",
     linkedInProfileLabel: "LinkedIn profile",

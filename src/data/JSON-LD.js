@@ -1,5 +1,4 @@
-export const getPersonJsonLd = (site) => ({
-  "@context": "https://schema.org",
+const getPerson = (site) => ({
   "@type": "Person",
   "@id": `${site.url}/#person`,
   name: "Alex Hiriavenko",
@@ -83,3 +82,53 @@ export const getPersonJsonLd = (site) => ({
     "https://www.facebook.com/alexey.giryavenko",
   ],
 });
+
+const getWebSite = (site) => ({
+  "@type": "WebSite",
+  "@id": `${site.url}/#website`,
+  name: "Alex Hiriavenko CV",
+  url: `${site.url}/`,
+  inLanguage: ["en", "ru", "uk"],
+  publisher: {
+    "@id": `${site.url}/#person`,
+  },
+});
+
+const getProfilePage = (site) => ({
+  "@type": "ProfilePage",
+  "@id": `${site.url}/#profile-page`,
+  name: "Alex Hiriavenko CV",
+  url: `${site.url}/`,
+  isPartOf: {
+    "@id": `${site.url}/#website`,
+  },
+  mainEntity: {
+    "@id": `${site.url}/#person`,
+  },
+});
+
+const getBreadcrumbList = (breadcrumb) => ({
+  "@type": "BreadcrumbList",
+  "@id": `${breadcrumb.currentUrl}#breadcrumb`,
+  itemListElement: breadcrumb.items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@id": item.url,
+      name: item.name,
+    },
+  })),
+});
+
+export const getJsonLd = (site, options = {}) => {
+  const graph = [getPerson(site), getWebSite(site), getProfilePage(site)];
+
+  if (options.breadcrumb) {
+    graph.push(getBreadcrumbList(options.breadcrumb));
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": graph,
+  };
+};

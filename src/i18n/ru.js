@@ -15,6 +15,9 @@ export const ru = {
     linksLabel: "Ссылки в футере и авторские права",
     githubProfileLabel: "GitHub — Alex Hiriavenko",
   },
+  breadcrumbs: {
+    home: "Главная",
+  },
   contacts: {
     title: "Контакты",
     linkedInProfileLabel: "Профиль LinkedIn",
