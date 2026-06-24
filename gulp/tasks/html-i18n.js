@@ -57,6 +57,10 @@ const getAlternateLinks = (route) => {
   });
 };
 
+const getAlternateOgLocales = (currentLocale) => {
+  return locales.filter((locale) => locale.code !== currentLocale.code).map((locale) => locale.ogLocale);
+};
+
 const getRoutePageData = (route, locale, outputSegments) => {
   const seo = route.seo?.[locale.code] ?? route.seo?.[defaultLocale] ?? {};
   const defaultLocaleConfig = locales.find((item) => item.code === defaultLocale);
@@ -74,6 +78,7 @@ const getRoutePageData = (route, locale, outputSegments) => {
     canonicalUrl: getAbsolutePageUrl(outputSegments),
     profilePageUrl: getAbsolutePageUrl(localeHomeSegments),
     alternateLinks: getAlternateLinks(route),
+    alternateOgLocales: getAlternateOgLocales(locale),
     xDefaultUrl: getAbsolutePageUrl(defaultSegments),
   };
 };

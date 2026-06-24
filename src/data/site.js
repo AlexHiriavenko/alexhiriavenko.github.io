@@ -5,4 +5,7 @@ export const site = {
   author: "Alex Hiriavenko",
   themeColor: "#0f172a",
   ogImage: "https://alexhiriavenko.github.io/img/og-image.png",
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: "Alex Hiriavenko — Fullstack Developer CV",
 };

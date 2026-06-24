@@ -73,7 +73,7 @@ const getPerson = (site, page) => ({
     "@type": "Organization",
     name: "Palmo",
   },
-  image: `${site.url}/img/user-photo.jpg`,
+  image: `${site.url}/img/profile-photo.png`,
   email: "mailto:martmarchmartmarch@gmail.com",
   telephone: "+380504716006",
   url: `${site.url}/`,
@@ -83,6 +83,7 @@ const getPerson = (site, page) => ({
   sameAs: [
     "https://www.linkedin.com/in/alex-hiriavenko/",
     "https://github.com/AlexHiriavenko",
+    "https://gitlab.com/ma_rch",
     "https://t.me/AlexHiriavenko",
     "https://www.facebook.com/alexey.giryavenko",
   ],
