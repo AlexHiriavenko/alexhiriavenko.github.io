@@ -64,6 +64,40 @@ export const ru = {
     title: "Сертификаты",
     linkText: "смотреть сертификаты",
   },
+  certificatesPage: {
+    previewLabel: "Просмотр сертификата",
+    closeLabel: "Закрыть просмотр сертификата",
+    items: [
+      {
+        image: "eng.jpg",
+        alt: "Сертификат по английскому языку",
+      },
+      {
+        image: "it-porducts.jpg",
+        alt: "Сертификат IT Products",
+      },
+      {
+        image: "DanIT.jpg",
+        alt: "Сертификат DAN.IT Education",
+      },
+      {
+        image: "epam.jpg",
+        alt: "Сертификат EPAM",
+      },
+      {
+        image: "rss-nodejs.jpg",
+        alt: "Сертификат RS School Node.js",
+      },
+      {
+        image: "sql_certificate.png",
+        alt: "Сертификат SQL",
+      },
+      {
+        image: "rss-js.jpg",
+        alt: "Сертификат RS School JavaScript",
+      },
+    ],
+  },
   summary: {
     title: "Обо мне",
     paragraphs: [

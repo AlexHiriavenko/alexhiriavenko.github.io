@@ -28,12 +28,12 @@ export const routes = [
         description: "Professional certificates and completed courses by Alex Hiriavenko.",
       },
       ru: {
-        title: "Certificates | Alex Hiriavenko",
-        description: "Professional certificates and completed courses by Alex Hiriavenko.",
+        title: "Сертификаты | Alex Hiriavenko",
+        description: "Профессиональные сертификаты и пройденные курсы Alex Hiriavenko.",
       },
       uk: {
-        title: "Certificates | Alex Hiriavenko",
-        description: "Professional certificates and completed courses by Alex Hiriavenko.",
+        title: "Сертифікати | Alex Hiriavenko",
+        description: "Професійні сертифікати та пройдені курси Alex Hiriavenko.",
       },
     },
   },

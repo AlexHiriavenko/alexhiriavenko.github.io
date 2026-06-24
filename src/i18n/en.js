@@ -64,6 +64,40 @@ export const en = {
     title: "Certificates",
     linkText: "click here",
   },
+  certificatesPage: {
+    previewLabel: "Certificate preview",
+    closeLabel: "Close certificate preview",
+    items: [
+      {
+        image: "eng.jpg",
+        alt: "English language certificate",
+      },
+      {
+        image: "it-porducts.jpg",
+        alt: "IT Products certificate",
+      },
+      {
+        image: "DanIT.jpg",
+        alt: "DAN.IT Education certificate",
+      },
+      {
+        image: "epam.jpg",
+        alt: "EPAM certificate",
+      },
+      {
+        image: "rss-nodejs.jpg",
+        alt: "RS School Node.js certificate",
+      },
+      {
+        image: "sql_certificate.png",
+        alt: "SQL certificate",
+      },
+      {
+        image: "rss-js.jpg",
+        alt: "RS School JavaScript certificate",
+      },
+    ],
+  },
   summary: {
     title: "Summary",
     paragraphs: [

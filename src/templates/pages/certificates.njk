@@ -11,13 +11,14 @@
     <div class="lb" id="lightbox" role="dialog" aria-modal="true" hidden>
       <div class="lb__backdrop" data-lb-close></div>
 
-      <figure class="lb__content" aria-label="Certificate preview">
-        <button class="lb__close" type="button" aria-label="Close" data-lb-close>вњ•</button>
+      <figure class="lb__content" aria-label="{{ t.certificatesPage.previewLabel }}">
+        <button class="lb__close" type="button" aria-label="{{ t.certificatesPage.closeLabel }}" data-lb-close>
+          &times;
+        </button>
         <img class="lb__img" alt="" />
       </figure>
     </div>
 
-    <!-- Lightbox -->
     <script src="{{ assetPath }}js/app.min.js"></script>
     <!-- Masonry -->
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>

@@ -64,6 +64,40 @@ export const uk = {
     title: "Сертифікати",
     linkText: "переглянути сертифікати",
   },
+  certificatesPage: {
+    previewLabel: "Перегляд сертифіката",
+    closeLabel: "Закрити перегляд сертифіката",
+    items: [
+      {
+        image: "eng.jpg",
+        alt: "Сертифікат з англійської мови",
+      },
+      {
+        image: "it-porducts.jpg",
+        alt: "Сертифікат IT Products",
+      },
+      {
+        image: "DanIT.jpg",
+        alt: "Сертифікат DAN.IT Education",
+      },
+      {
+        image: "epam.jpg",
+        alt: "Сертифікат EPAM",
+      },
+      {
+        image: "rss-nodejs.jpg",
+        alt: "Сертифікат RS School Node.js",
+      },
+      {
+        image: "sql_certificate.png",
+        alt: "Сертифікат SQL",
+      },
+      {
+        image: "rss-js.jpg",
+        alt: "Сертифікат RS School JavaScript",
+      },
+    ],
+  },
   summary: {
     title: "Про мене",
     paragraphs: [
