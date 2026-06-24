@@ -5,16 +5,16 @@ export const routes = [
     outputPath: "",
     seo: {
       en: {
-        title: "Alex Hiriavenko CV",
-        description: "Fullstack Developer CV. Node.js, NestJS, Vue, PostgreSQL.",
+        title: "Alex Hiriavenko | Fullstack Developer CV",
+        description: "Fullstack Developer CV: Vue.js, Node.js, NestJS, PostgreSQL, CRM systems, API development, and performance optimization.",
       },
       ru: {
-        title: "Alex Hiriavenko CV",
-        description: "Fullstack Developer CV. Node.js, NestJS, Vue, PostgreSQL.",
+        title: "Alex Hiriavenko | Fullstack Developer резюме",
+        description: "Резюме Fullstack Developer: Vue.js, Node.js, NestJS, PostgreSQL, CRM-системы, разработка API и оптимизация производительности.",
       },
       uk: {
-        title: "Alex Hiriavenko CV",
-        description: "Fullstack Developer CV. Node.js, NestJS, Vue, PostgreSQL.",
+        title: "Alex Hiriavenko | Fullstack Developer резюме",
+        description: "Резюме Fullstack Developer: Vue.js, Node.js, NestJS, PostgreSQL, CRM-системи, розробка API та оптимізація продуктивності.",
       },
     },
   },
