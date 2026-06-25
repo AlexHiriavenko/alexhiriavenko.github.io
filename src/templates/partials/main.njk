@@ -1,6 +1,8 @@
 <main>
-  <h1 class="cv-title">{{ t.main.name }}</h1>
-  <h2 class="cv-subtitle">Fullstack Developer</h2>
+  <h1 class="cv-title">
+    {{ t.main.name }}
+    <span class="cv-subtitle">Fullstack Developer</span>
+  </h1>
 
   {% include "partials/main-sections/summary.njk" %}
   {% include "partials/main-sections/achievements.njk" %}
