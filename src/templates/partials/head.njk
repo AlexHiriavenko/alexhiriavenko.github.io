@@ -7,6 +7,8 @@
   <meta name="author" content="{{ site.author }}" />
   <meta name="theme-color" content="{{ site.themeColor }}" />
   <link rel="canonical" href="{{ page.canonicalUrl }}" />
+  <link rel="alternate" type="application/json" href="{{ site.url }}/resume.json" title="Alex Hiriavenko Resume JSON" />
+  <link rel="alternate" type="application/pdf" href="{{ site.url }}/Alex_Hiriavenko_CV.pdf" title="Alex Hiriavenko CV PDF" />
   {% for alternate in page.alternateLinks %}
   <link rel="alternate" hreflang="{{ alternate.hreflang }}" href="{{ alternate.url }}" />
   {% endfor %}

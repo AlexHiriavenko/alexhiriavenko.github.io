@@ -15,6 +15,7 @@ export const path = {
     css: `${distFolder}/css/`,
     html: `${distFolder}/`,
     manifest: `${distFolder}/`,
+    resume: `${distFolder}/`,
   },
   src: {
     // основной вход
@@ -30,6 +31,7 @@ export const path = {
     svg: `${srcFolder}/img/**/*.svg`,
     files: `${srcFolder}/files/**/*.*`,
     manifest: `${srcFolder}/manifest.webmanifest`,
+    resume: [`${srcFolder}/resume.json`, `${srcFolder}/Alex_Hiriavenko_CV.pdf`],
   },
   watch: {
     html: `${srcFolder}/**/*.html`,
@@ -42,6 +44,7 @@ export const path = {
     files: `${srcFolder}/files/**/*.*`,
     svg: `${srcFolder}/img/**/*.svg`,
     manifest: `${srcFolder}/manifest.webmanifest`,
+    resume: [`${srcFolder}/resume.json`, `${srcFolder}/Alex_Hiriavenko_CV.pdf`],
   },
   distFolder,
   srcFolder,

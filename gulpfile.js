@@ -18,6 +18,7 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
 import { manifest } from "./gulp/tasks/manifest.js";
+import { resume } from "./gulp/tasks/resume.js";
 import { htmlI18n } from "./gulp/tasks/html-i18n.js";
 import { seo } from "./gulp/tasks/seo.js";
 // import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
@@ -30,13 +31,14 @@ function watcher() {
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.images, images);
+  gulp.watch(path.watch.resume, resume);
 }
 
 //Послідовна обробка шрифтів
 // const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle); // вариант со шрифтами
 
 // перечень тасков - выполняем параллельно (одновременно, асинхронно)
-const tasks = gulp.parallel(/* copy,*/ htmlI18n, scss, js, images, manifest, seo);
+const tasks = gulp.parallel(/* copy,*/ htmlI18n, scss, js, images, manifest, resume, seo);
 // const tasks = gulp.series(fonts, gulp.parallel(/* copy,*/ html, scss, js, images)); // вариант со шрифтами
 
 // основной сценарий - выполняем последовательно очистить dist, запустить таски, и асинхронно наблюдатель + лайвсервер.
