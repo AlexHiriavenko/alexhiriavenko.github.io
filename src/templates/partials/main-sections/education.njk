@@ -1,0 +1,14 @@
+<section class="experience" id="education" aria-labelledby="education-title">
+  <h3 id="education-title" class="section-title">{{ t.education.title }}</h3>
+  <ul class="exp__list">
+    {% for item in t.education.items %}
+    <li class="exp__item">
+      <article aria-labelledby="edu-{{ item.id }}-title">
+        <h4 id="edu-{{ item.id }}-title" class="edu__title-item">{{ item.title }}</h4>
+        <p class="edu__text mt-10">{{ item.institution }}</p>
+        <p class="edu__text">{{ item.degree }}</p>
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

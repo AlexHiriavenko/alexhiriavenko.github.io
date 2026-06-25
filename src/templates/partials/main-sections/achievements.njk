@@ -1,0 +1,15 @@
+<section class="experience" id="achievements" aria-labelledby="achievements-title">
+  <h3 id="achievements-title" class="section-title">{{ t.achievements.title }}</h3>
+
+  <ul class="exp__list">
+    <li class="exp__item">
+      <div>
+        <ul class="achievements__list">
+          {% for item in t.achievements.items %}
+          <li class="achievements__item">{{ item | safe }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>

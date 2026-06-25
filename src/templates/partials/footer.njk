@@ -1,0 +1,30 @@
+<footer>
+  <ul class="footer__list" aria-label="{{ t.footer.linksLabel }}">
+    <li>
+      <a
+        class="github-item"
+        href="https://github.com/AlexHiriavenko"
+        target="_blank"
+        rel="me noopener"
+        aria-label="{{ t.footer.githubProfileLabel }}"
+      >
+        <img src="{{ assetPath }}img/icons/github.svg" alt="" width="26" />
+        <span class="github-text">GitHub</span>
+      </a>
+    </li>
+
+    <li>
+      <small>©<time id="copyright-year" datetime="2025">2025</time></small>
+    </li>
+  </ul>
+</footer>
+
+<script>
+  (() => {
+    const el = document.getElementById("copyright-year");
+    if (!el) return;
+    const y = String(new Date().getFullYear());
+    el.textContent = y;
+    el.setAttribute("datetime", y);
+  })();
+</script>

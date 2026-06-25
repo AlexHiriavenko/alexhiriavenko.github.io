@@ -1,0 +1,7 @@
+<section id="summary" aria-labelledby="summary-title">
+  <h3 id="summary-title" class="section-title">{{ t.summary.title }}</h3>
+
+  {% for paragraph in t.summary.paragraphs %}
+  <p class="about-text">{{ paragraph }}</p>
+  {% endfor %}
+</section>

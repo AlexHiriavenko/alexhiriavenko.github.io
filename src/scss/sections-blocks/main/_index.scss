@@ -7,6 +7,7 @@
 }
 
 .cv-subtitle {
+  display: block;
   margin-top: 10px;
   margin-bottom: 40px;
   font-size: 32px;
@@ -128,4 +129,16 @@ main .section-title {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.title-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.cv-download-desktop {
+  position: absolute;
+  top: 50%;
+  right: calc(100% - 96%);
+  transform: translateY(-50%);
 }

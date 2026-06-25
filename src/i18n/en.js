@@ -1,0 +1,237 @@
+export const en = {
+  header: {
+    avatarAlt: "Portrait of Alex Hiriavenko",
+    nav: {
+      summary: "Summary",
+      achievements: "Achievements",
+      experience: "Experience",
+      education: "Education",
+      certificates: "Certificates",
+    },
+    languageSelectLabel: "Select language",
+    menuButton: "Menu",
+  },
+  footer: {
+    linksLabel: "Footer links and copyright",
+    githubProfileLabel: "GitHub — Alex Hiriavenko",
+  },
+  breadcrumbs: {
+    home: "Home",
+  },
+  main: {
+    name: "Alex Hiriavenko",
+    downloadText: "Download CV in PDF format",
+  },
+  contacts: {
+    title: "Contacts",
+    linkedInProfileLabel: "LinkedIn profile",
+    telegramProfileLabel: "Telegram",
+    githubProfileLabel: "GitHub profile",
+  },
+  skills: {
+    title: "Skills",
+    iconAlt: "skills",
+    groups: {
+      languages: "Languages",
+      frontend: "Frontend",
+      backend: "Backend",
+      databases: "Databases & ORM",
+      state: "State Management & Data Fetching",
+      messaging: "Messaging & Real-time",
+      devops: "DevOps & Cloud",
+      monitoring: "Monitoring & Observability",
+      ai: "AI-assisted Development",
+      architecture: "Architecture & Practices",
+    },
+    aiItems: {
+      ideAgents: "IDE-integrated AI coding agents",
+      agentsWorkflows: "AGENTS.md workflows",
+      codeAnalysis: "Code analysis, refactoring, bug fixing",
+      testGeneration: "Test generation, AI change review",
+    },
+    architectureItems: {
+      cleanArchitecture: "Clean Architecture",
+      performance: "Performance & Profiling",
+    },
+  },
+  languages: {
+    title: "Languages",
+    ukrainianFlagAlt: "Ukrainian flag",
+    ukFlagAlt: "UK flag",
+    russianFlagAlt: "Russian flag",
+    ukrainian: "Ukrainian - native",
+    english: "English - intermediate (B1)",
+    russian: "Russian - fluent",
+  },
+  courses: {
+    title: "Courses",
+    iconAlt: "courses",
+  },
+  certificates: {
+    title: "Certificates",
+    linkText: "click here",
+  },
+  certificatesPage: {
+    previewLabel: "Certificate preview",
+    closeLabel: "Close certificate preview",
+    items: [
+      {
+        image: "eng.jpg",
+        alt: "English language certificate",
+      },
+      {
+        image: "it-porducts.jpg",
+        alt: "IT Products certificate",
+      },
+      {
+        image: "DanIT.jpg",
+        alt: "DAN.IT Education certificate",
+      },
+      {
+        image: "epam.jpg",
+        alt: "EPAM certificate",
+      },
+      {
+        image: "rss-nodejs.jpg",
+        alt: "RS School Node.js certificate",
+      },
+      {
+        image: "sql_certificate.png",
+        alt: "SQL certificate",
+      },
+      {
+        image: "rss-js.jpg",
+        alt: "RS School JavaScript certificate",
+      },
+    ],
+  },
+  summary: {
+    title: "Summary",
+    paragraphs: [
+      "Full-Stack Developer (Vue.js, NodeJS, NestJS, Laravel, TypeORM, PostgreSQL) with hands-on experience building healthcare digital products for a multi-location medical network: CRM, public website, patient cabinet, online consultations, appointment booking, payments, and Telegram bot workflows.",
+      "Strong background in scalable APIs, PostgreSQL optimization, high-load interfaces, reusable frontend architecture, and reliable integrations for patient and staff workflows.",
+      "Graduate of the IT Generation program by the Ministry of Digital Transformation of Ukraine.",
+    ],
+  },
+  achievements: {
+    title: "Achievements",
+    items: [
+      "Improved page load speed by <strong>30-80%</strong> across frontend and backend flows by trimming unnecessary payload data, removing redundant server requests, and optimizing PostgreSQL queries.",
+      "Implemented backend proxy for S3 file delivery - improved security (no direct public links) and reduced frontend integration complexity.",
+      "Delivered a reusable <strong>Task Templates module</strong> for CRM - employees create new tasks faster and with fewer errors, improving overall workflow efficiency.",
+      "Built reusable <strong>Vue composables</strong> and base UI components, including a screenshot upload flow reused in 3 modules (news, comments, tasks) - reduced code duplication and accelerated feature delivery across the project.",
+      "Delivered high-load healthcare CRM modules (≈3K users) ensuring stability and performance under peak load.",
+      "Awarded <strong>IT Generation grant</strong>.",
+    ],
+  },
+  experience: {
+    title: "Experience",
+    items: [
+      {
+        id: "palmo",
+        position: "Fullstack Developer",
+        company: "Palmo",
+        period: "2024 - Present",
+        datetime: "2024",
+        details: [
+          "Developed and maintained ON Clinic's patient-facing digital platform, including the public medical website, patient cabinet, CRM modules, Telegram bot, and online appointment and payment workflows for a multi-location healthcare network.",
+          "Optimized PostgreSQL queries and API performance with caching and indexing.",
+          "Enhanced front-end interfaces and introduced reusable hooks/components to accelerate delivery.",
+          "Collaborated in agile teams with analysts, developers, QA, and DevOps, contributing to design.",
+        ],
+      },
+      {
+        id: "internship",
+        position: "Front End Developer Internship",
+        company: "DAN.IT",
+        period: "2023",
+        datetime: "2023",
+        details: [
+          "Gained hands-on experience working in teams of 3-9 people on full-cycle projects.",
+          "Took the role of team lead in one project, coordinating task distribution and mentoring peers.",
+          "Built a social network project using React, Redux, MUI.",
+        ],
+      },
+    ],
+  },
+  additionalExperience: {
+    title: "Additional Experience",
+    items: [
+      {
+        id: "logika",
+        title: "Web Development Instructor (Logika School)",
+        text: "Taught school-age students web development and frontend fundamentals, explaining HTML, CSS, JavaScript basics, and practical project structure in an accessible way.",
+      },
+      {
+        id: "vhh",
+        title: "Purchasing Manager (VHH Group)",
+        text: "Ensured uninterrupted supply of equipment, components, and materials. Conducted market analysis, negotiated and concluded contracts, monitored quality of goods and services.",
+      },
+      {
+        id: "effect",
+        title: 'Category Purchasing Manager (LLC "Effect")',
+        text: "Managed procurement in assigned category, negotiated supplier contracts, and improved inventory turnover. Conducted demand forecasting and market trend analysis to increase sales and turnover.",
+      },
+    ],
+  },
+  education: {
+    title: "Education",
+    items: [
+      {
+        id: "engineer",
+        title: "Higher Education: Processing Equipment Engineer",
+        institution: "Donetsk National University of Economics and Trade",
+        degree: "Specialist Degree",
+      },
+    ],
+  },
+  projects: {
+    title: "Educational & Pet Projects",
+    note: "Non-commercial projects built during training and personal practice.",
+    websiteLink: "website link",
+    repositoryLink: "repository link",
+    technologyLabel: "Main technologies",
+    items: [
+      {
+        id: "star-wars",
+        title: "Star Wars",
+        descriptions: ["Star Wars characters."],
+        technologies: ["React", "RTK Query", "Routing"],
+        websiteUrl: "https://react-starwars.netlify.app/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/React_StarWars/tree/api-queries",
+        image: "star_wars.jpg",
+        alt: "Star Wars app preview",
+      },
+      {
+        id: "nonograms",
+        title: "Nonograms Game",
+        descriptions: ["Logic puzzle: Japanese crossword."],
+        technologies: ["JavaScript"],
+        websiteUrl: "https://alexhiriavenko.github.io/Palmo-Edu/nonograms/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Nonograms-App",
+        image: "nonograms.jpg",
+        alt: "Nonograms Game preview",
+      },
+      {
+        id: "sports-events",
+        title: "Sports Events App",
+        descriptions: ["Sporting events booking service."],
+        technologies: ["Vue", "Firebase"],
+        websiteUrl: "https://alexhiriavenko.github.io/Palmo-Edu/Sports-Events/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/Palmo-Edu/tree/main/Vue/Sports-Events-App",
+        image: "sports-events.jpg",
+        alt: "Sports Events App preview",
+      },
+      {
+        id: "edok",
+        title: "EDOK",
+        descriptions: ["Food delivery service."],
+        technologies: ["Laravel", "Vue"],
+        websiteUrl: "https://alexhiriavenko.github.io/Restaurant-Vue/",
+        repositoryUrl: "https://github.com/AlexHiriavenko/Restaurant-Vue",
+        image: "edok.jpg",
+        alt: "EDOK food delivery service preview",
+      },
+    ],
+  },
+};

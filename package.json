@@ -1,5 +1,5 @@
 {
-  "name": "cv-alex-giryavenko",
+  "name": "cv-alex-hiriavenko",
   "version": "1.0.0",
   "description": "cv",
   "main": "gulpfile.js",
@@ -14,19 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/ma_rch/cv_fullstack_alex_giryavenko"
+    "url": "https://github.com/AlexHiriavenko/alexhiriavenko.github.io.git"
   },
   "keywords": [
     "gulp",
     "bundle",
     "AlexHiriavenko"
   ],
-  "author": "ma_rch AlexGiryavenko",
+  "author": "ma_rch Alex Hiriavenko",
   "license": "ISC",
   "bugs": {
     "email": "martmarchmartmarch@gmail.com"
   },
-  "homepage": "https://ma_rch.gitlab.io/cv_fullstack_alex_giryavenko/",
+  "homepage": "https://alexhiriavenko.github.io/",
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "del": "^8.0.0",
@@ -51,6 +51,7 @@
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^11.0.1",
+    "nunjucks": "^3.2.4",
     "sass": "^1.92.1",
     "webpack": "^5.101.3",
     "webpack-stream": "^7.0.0"

@@ -73,6 +73,10 @@
       opacity: 1;
       pointer-events: auto;
   }
+
+  .cv-download-desktop {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {

@@ -1,0 +1,14 @@
+<section class="experience" aria-labelledby="additional-exp-title">
+  <h3 id="additional-exp-title" class="section-title">{{ t.additionalExperience.title }}</h3>
+
+  <ul class="exp__list">
+    {% for item in t.additionalExperience.items %}
+    <li class="exp__item">
+      <article aria-labelledby="exp-{{ item.id }}-title">
+        <h4 id="exp-{{ item.id }}-title" class="exp__title-item">{{ item.title }}</h4>
+        <p class="exp__text">{{ item.text }}</p>
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

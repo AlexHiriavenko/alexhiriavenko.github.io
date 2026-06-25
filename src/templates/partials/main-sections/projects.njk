@@ -1,0 +1,59 @@
+<section class="projects" aria-labelledby="projects-title">
+  <h3 id="projects-title" class="section-title">{{ t.projects.title }}</h3>
+  <p class="section-item-text projects__note">{{ t.projects.note }}</p>
+
+  <ul>
+    {% for project in t.projects.items %}
+    <li class="projects__item">
+      <article aria-labelledby="proj-{{ project.id }}-title">
+        <h4 id="proj-{{ project.id }}-title" class="projects__item-title">- {{ project.title }}:</h4>
+
+        <div class="projects__item-description">
+          <div class="projects__item-description-wrapper">
+            {% for description in project.descriptions %}
+            <p class="projects__item-description-text">{{ description }}</p>
+            {% endfor %}
+            <p class="projects__item-description-text">
+              <strong>{{ t.projects.technologyLabel }}:</strong> {{ project.technologies | join(", ") }}
+            </p>
+
+            <div>
+              <a
+                class="projects__item-link"
+                href="{{ project.websiteUrl }}"
+                target="_blank"
+                rel="noopener"
+                >{{ t.projects.websiteLink }}</a
+              >
+              /
+              <a
+                class="projects__item-link"
+                href="{{ project.repositoryUrl }}"
+                target="_blank"
+                rel="noopener"
+                >{{ t.projects.repositoryLink }}</a
+              >
+            </div>
+          </div>
+
+          <figure class="projects__img-wrapper">
+            <a
+              class="projects__item-link projects__item-link--hover"
+              href="{{ project.websiteUrl }}"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="{{ assetPath }}img/projects/{{ project.image }}"
+                alt="{{ project.alt }}"
+                width="100"
+                loading="lazy"
+              />
+            </a>
+          </figure>
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

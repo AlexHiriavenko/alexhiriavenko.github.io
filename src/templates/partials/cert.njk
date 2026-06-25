@@ -1,0 +1,9 @@
+<section class="cert-gallery">
+  <div class="grid-sizer"></div>
+
+  {% for certificate in t.certificatesPage.items %}
+  <div class="cert-item">
+    <img src="{{ assetPath }}img/cert/{{ certificate.image }}" alt="{{ certificate.alt }}" />
+  </div>
+  {% endfor %}
+</section>
