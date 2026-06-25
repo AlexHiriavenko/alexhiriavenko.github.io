@@ -1,0 +1,143 @@
+{
+  "$schema": "https://jsonresume.org/schema/",
+  "basics": {
+    "name": "Alex Hiriavenko",
+    "label": "Fullstack Developer",
+    "image": "https://alexhiriavenko.github.io/img/profile-photo.png",
+    "email": "martmarchmartmarch@gmail.com",
+    "phone": "+380504716006",
+    "url": "https://alexhiriavenko.github.io/",
+    "summary": "Full-Stack Developer with hands-on experience building healthcare digital products for a multi-location medical network: CRM, public website, patient cabinet, online consultations, appointment booking, payments, and Telegram bot workflows. Strong background in scalable APIs, PostgreSQL optimization, high-load interfaces, reusable frontend architecture, and reliable integrations for patient and staff workflows.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alex-hiriavenko",
+        "url": "https://www.linkedin.com/in/alex-hiriavenko/"
+      },
+      {
+        "network": "GitHub",
+        "username": "AlexHiriavenko",
+        "url": "https://github.com/AlexHiriavenko"
+      },
+      {
+        "network": "Telegram",
+        "username": "AlexHiriavenko",
+        "url": "https://t.me/AlexHiriavenko"
+      },
+      {
+        "network": "GitLab",
+        "username": "ma_rch",
+        "url": "https://gitlab.com/ma_rch"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Palmo",
+      "position": "Fullstack Developer",
+      "startDate": "2024",
+      "summary": "Developed and maintained ON Clinic's patient-facing digital platform and healthcare CRM modules for a multi-location medical network.",
+      "highlights": [
+        "Developed and maintained ON Clinic's public medical website, patient cabinet, CRM modules, Telegram bot, and online appointment and payment workflows.",
+        "Optimized PostgreSQL queries and API performance with caching and indexing.",
+        "Enhanced front-end interfaces and introduced reusable hooks/components to accelerate delivery.",
+        "Collaborated in agile teams with analysts, developers, QA, and DevOps."
+      ]
+    },
+    {
+      "name": "DAN.IT",
+      "position": "Front End Developer Internship",
+      "startDate": "2023",
+      "endDate": "2023",
+      "summary": "Gained hands-on experience working in teams of 3-9 people on full-cycle projects.",
+      "highlights": [
+        "Took the role of team lead in one project, coordinating task distribution and mentoring peers.",
+        "Built a social network project using React, Redux, and MUI."
+      ]
+    },
+    {
+      "name": "Logika School",
+      "position": "Web Development Instructor",
+      "summary": "Taught school-age students web development and frontend fundamentals, including HTML, CSS, JavaScript basics, and practical project structure."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Donetsk National University of Economics and Trade",
+      "area": "Processing Equipment Engineering",
+      "studyType": "Specialist Degree"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Professional certificates and completed courses",
+      "url": "https://alexhiriavenko.github.io/certificates/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["JavaScript", "TypeScript", "PHP"]
+    },
+    {
+      "name": "Frontend",
+      "keywords": ["Vue 3", "Composition API", "React", "Next.js", "Tailwind CSS", "Element Plus", "PrimeVue", "Vuetify", "MUI", "Vite", "Webpack", "Gulp"]
+    },
+    {
+      "name": "Backend",
+      "keywords": ["Node.js", "Express", "NestJS", "Laravel", "REST API", "WebSocket"]
+    },
+    {
+      "name": "Databases & ORM",
+      "keywords": ["PostgreSQL", "MySQL", "Redis", "MongoDB", "TypeORM", "Eloquent"]
+    },
+    {
+      "name": "State Management & Data Fetching",
+      "keywords": ["Pinia", "Redux Toolkit", "RTK Query"]
+    },
+    {
+      "name": "Messaging & Real-time",
+      "keywords": ["RabbitMQ", "WebSocket"]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "keywords": ["Docker", "Nginx", "AWS S3", "GitLab CI/CD"]
+    },
+    {
+      "name": "Monitoring & Observability",
+      "keywords": ["Lens", "Grafana", "Sentry"]
+    },
+    {
+      "name": "AI-assisted Development",
+      "keywords": ["OpenAI Codex", "Claude Code", "IDE-integrated AI coding agents", "AGENTS.md workflows", "Code analysis", "Refactoring", "Bug fixing", "Test generation", "AI change review"]
+    },
+    {
+      "name": "Architecture & Practices",
+      "keywords": ["Clean Architecture", "SOLID", "Performance & Profiling"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Ukrainian",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate (B1)"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Healthcare CRM, scalable APIs, performance optimization, reusable frontend architecture, AI-assisted development"
+    }
+  ],
+  "meta": {
+    "canonical": "https://alexhiriavenko.github.io/resume.json",
+    "version": "1.0.0",
+    "lastModified": "2026-06-25"
+  }
+}
