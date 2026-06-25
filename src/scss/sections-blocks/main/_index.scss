@@ -130,3 +130,15 @@ main .section-title {
   gap: 12px;
   align-items: center;
 }
+
+.title-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.cv-download-desktop {
+  position: absolute;
+  top: 50%;
+  right: calc(100% - 96%);
+  transform: translateY(-50%);
+}

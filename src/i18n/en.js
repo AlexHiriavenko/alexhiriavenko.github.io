@@ -20,6 +20,7 @@ export const en = {
   },
   main: {
     name: "Alex Hiriavenko",
+    downloadText: "Download CV in PDF format",
   },
   contacts: {
     title: "Contacts",

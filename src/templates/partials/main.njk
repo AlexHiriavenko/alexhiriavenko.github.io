@@ -1,8 +1,25 @@
 <main>
-  <h1 class="cv-title">
-    {{ t.main.name }}
-    <span class="cv-subtitle">Fullstack Developer</span>
-  </h1>
+  <div class="title-wrapper">
+    <h1 class="cv-title">
+      {{ t.main.name }}
+      <span class="cv-subtitle">Fullstack Developer</span>
+    </h1>
+    <a
+      class="cv-download-desktop"
+      href="{{ assetPath }}Alex_Hiriavenko_CV.pdf"
+      download="Alex_Hiriavenko_CV.pdf"
+      aria-label="{{ t.main.downloadText }}"
+      title="{{ t.main.downloadText }}"
+    >
+      <img
+        src="{{ assetPath }}img/icons/pdf-download.svg"
+        alt="{{ t.main.downloadText }}"
+        width="46"
+        height="46"
+        aria-hidden="true"
+      />
+    </a>
+  </div>
 
   {% include "partials/main-sections/summary.njk" %}
   {% include "partials/main-sections/achievements.njk" %}
