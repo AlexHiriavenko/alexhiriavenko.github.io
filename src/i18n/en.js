@@ -107,8 +107,8 @@ export const en = {
   summary: {
     title: "Summary",
     paragraphs: [
-      "Full-Stack Developer (Vue.js, NodeJS, NestJS, Laravel, TypeORM, PostgreSQL) with hands-on experience building and maintaining high-load CRM systems (≈3K users, healthcare domain).",
-      "Strong background in designing scalable APIs, database optimization, and real-time features. Passionate about performance, clean architecture, and delivering reliable solutions that improve user experience and business efficiency.",
+      "Full-Stack Developer (Vue.js, NodeJS, NestJS, Laravel, TypeORM, PostgreSQL) with hands-on experience building healthcare digital products for a multi-location medical network: CRM, public website, patient cabinet, online consultations, appointment booking, payments, and Telegram bot workflows.",
+      "Strong background in scalable APIs, PostgreSQL optimization, high-load interfaces, reusable frontend architecture, and reliable integrations for patient and staff workflows.",
       "Graduate of the IT Generation program by the Ministry of Digital Transformation of Ukraine.",
     ],
   },
